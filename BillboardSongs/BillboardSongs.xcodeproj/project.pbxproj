@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2D38F281FBB8531007FBEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D38F271FBB8531007FBEAB /* AppDelegate.swift */; };
+		D2D38F2A1FBB8531007FBEAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D38F291FBB8531007FBEAB /* ViewController.swift */; };
+		D2D38F2D1FBB8531007FBEAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D38F2B1FBB8531007FBEAB /* Main.storyboard */; };
+		D2D38F2F1FBB8531007FBEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D38F2E1FBB8531007FBEAB /* Assets.xcassets */; };
+		D2D38F321FBB8531007FBEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D38F301FBB8531007FBEAB /* LaunchScreen.storyboard */; };
+		D2D38F3D1FBB8531007FBEAB /* BillboardSongsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D38F3C1FBB8531007FBEAB /* BillboardSongsTests.swift */; };
+		D2D38F481FBB8531007FBEAB /* BillboardSongsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D38F471FBB8531007FBEAB /* BillboardSongsUITests.swift */; };
+		D2D38F581FBB863C007FBEAB /* BillboardSongs.json in Resources */ = {isa = PBXBuildFile; fileRef = D2D38F571FBB863C007FBEAB /* BillboardSongs.json */; };
+		D2D38F5A1FBB8C06007FBEAB /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D38F591FBB8C06007FBEAB /* Song.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2D38F391FBB8531007FBEAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D38F1C1FBB8531007FBEAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D38F231FBB8531007FBEAB;
+			remoteInfo = BillboardSongs;
+		};
+		D2D38F441FBB8531007FBEAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D38F1C1FBB8531007FBEAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D38F231FBB8531007FBEAB;
+			remoteInfo = BillboardSongs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2D38F241FBB8531007FBEAB /* BillboardSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillboardSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D38F271FBB8531007FBEAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2D38F291FBB8531007FBEAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2D38F2C1FBB8531007FBEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2D38F2E1FBB8531007FBEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2D38F311FBB8531007FBEAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2D38F331FBB8531007FBEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D38F381FBB8531007FBEAB /* BillboardSongsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillboardSongsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D38F3C1FBB8531007FBEAB /* BillboardSongsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardSongsTests.swift; sourceTree = "<group>"; };
+		D2D38F3E1FBB8531007FBEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D38F431FBB8531007FBEAB /* BillboardSongsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillboardSongsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D38F471FBB8531007FBEAB /* BillboardSongsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardSongsUITests.swift; sourceTree = "<group>"; };
+		D2D38F491FBB8531007FBEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D38F571FBB863C007FBEAB /* BillboardSongs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BillboardSongs.json; sourceTree = "<group>"; };
+		D2D38F591FBB8C06007FBEAB /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2D38F211FBB8531007FBEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D38F351FBB8531007FBEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D38F401FBB8531007FBEAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2D38F1B1FBB8531007FBEAB = {
+			isa = PBXGroup;
+			children = (
+				D2D38F571FBB863C007FBEAB /* BillboardSongs.json */,
+				D2D38F261FBB8531007FBEAB /* BillboardSongs */,
+				D2D38F3B1FBB8531007FBEAB /* BillboardSongsTests */,
+				D2D38F461FBB8531007FBEAB /* BillboardSongsUITests */,
+				D2D38F251FBB8531007FBEAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2D38F251FBB8531007FBEAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2D38F241FBB8531007FBEAB /* BillboardSongs.app */,
+				D2D38F381FBB8531007FBEAB /* BillboardSongsTests.xctest */,
+				D2D38F431FBB8531007FBEAB /* BillboardSongsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2D38F261FBB8531007FBEAB /* BillboardSongs */ = {
+			isa = PBXGroup;
+			children = (
+				D2D38F271FBB8531007FBEAB /* AppDelegate.swift */,
+				D2D38F291FBB8531007FBEAB /* ViewController.swift */,
+				D2D38F591FBB8C06007FBEAB /* Song.swift */,
+				D2D38F2B1FBB8531007FBEAB /* Main.storyboard */,
+				D2D38F2E1FBB8531007FBEAB /* Assets.xcassets */,
+				D2D38F301FBB8531007FBEAB /* LaunchScreen.storyboard */,
+				D2D38F331FBB8531007FBEAB /* Info.plist */,
+			);
+			path = BillboardSongs;
+			sourceTree = "<group>";
+		};
+		D2D38F3B1FBB8531007FBEAB /* BillboardSongsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2D38F3C1FBB8531007FBEAB /* BillboardSongsTests.swift */,
+				D2D38F3E1FBB8531007FBEAB /* Info.plist */,
+			);
+			path = BillboardSongsTests;
+			sourceTree = "<group>";
+		};
+		D2D38F461FBB8531007FBEAB /* BillboardSongsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2D38F471FBB8531007FBEAB /* BillboardSongsUITests.swift */,
+				D2D38F491FBB8531007FBEAB /* Info.plist */,
+			);
+			path = BillboardSongsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2D38F231FBB8531007FBEAB /* BillboardSongs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D38F4C1FBB8531007FBEAB /* Build configuration list for PBXNativeTarget "BillboardSongs" */;
+			buildPhases = (
+				D2D38F201FBB8531007FBEAB /* Sources */,
+				D2D38F211FBB8531007FBEAB /* Frameworks */,
+				D2D38F221FBB8531007FBEAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillboardSongs;
+			productName = BillboardSongs;
+			productReference = D2D38F241FBB8531007FBEAB /* BillboardSongs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2D38F371FBB8531007FBEAB /* BillboardSongsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D38F4F1FBB8531007FBEAB /* Build configuration list for PBXNativeTarget "BillboardSongsTests" */;
+			buildPhases = (
+				D2D38F341FBB8531007FBEAB /* Sources */,
+				D2D38F351FBB8531007FBEAB /* Frameworks */,
+				D2D38F361FBB8531007FBEAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D38F3A1FBB8531007FBEAB /* PBXTargetDependency */,
+			);
+			name = BillboardSongsTests;
+			productName = BillboardSongsTests;
+			productReference = D2D38F381FBB8531007FBEAB /* BillboardSongsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2D38F421FBB8531007FBEAB /* BillboardSongsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D38F521FBB8531007FBEAB /* Build configuration list for PBXNativeTarget "BillboardSongsUITests" */;
+			buildPhases = (
+				D2D38F3F1FBB8531007FBEAB /* Sources */,
+				D2D38F401FBB8531007FBEAB /* Frameworks */,
+				D2D38F411FBB8531007FBEAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D38F451FBB8531007FBEAB /* PBXTargetDependency */,
+			);
+			name = BillboardSongsUITests;
+			productName = BillboardSongsUITests;
+			productReference = D2D38F431FBB8531007FBEAB /* BillboardSongsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2D38F1C1FBB8531007FBEAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Lisa J";
+				TargetAttributes = {
+					D2D38F231FBB8531007FBEAB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D2D38F371FBB8531007FBEAB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2D38F231FBB8531007FBEAB;
+					};
+					D2D38F421FBB8531007FBEAB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2D38F231FBB8531007FBEAB;
+					};
+				};
+			};
+			buildConfigurationList = D2D38F1F1FBB8531007FBEAB /* Build configuration list for PBXProject "BillboardSongs" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2D38F1B1FBB8531007FBEAB;
+			productRefGroup = D2D38F251FBB8531007FBEAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2D38F231FBB8531007FBEAB /* BillboardSongs */,
+				D2D38F371FBB8531007FBEAB /* BillboardSongsTests */,
+				D2D38F421FBB8531007FBEAB /* BillboardSongsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2D38F221FBB8531007FBEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D38F581FBB863C007FBEAB /* BillboardSongs.json in Resources */,
+				D2D38F321FBB8531007FBEAB /* LaunchScreen.storyboard in Resources */,
+				D2D38F2F1FBB8531007FBEAB /* Assets.xcassets in Resources */,
+				D2D38F2D1FBB8531007FBEAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D38F361FBB8531007FBEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D38F411FBB8531007FBEAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2D38F201FBB8531007FBEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D38F5A1FBB8C06007FBEAB /* Song.swift in Sources */,
+				D2D38F2A1FBB8531007FBEAB /* ViewController.swift in Sources */,
+				D2D38F281FBB8531007FBEAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D38F341FBB8531007FBEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D38F3D1FBB8531007FBEAB /* BillboardSongsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D38F3F1FBB8531007FBEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D38F481FBB8531007FBEAB /* BillboardSongsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2D38F3A1FBB8531007FBEAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D38F231FBB8531007FBEAB /* BillboardSongs */;
+			targetProxy = D2D38F391FBB8531007FBEAB /* PBXContainerItemProxy */;
+		};
+		D2D38F451FBB8531007FBEAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D38F231FBB8531007FBEAB /* BillboardSongs */;
+			targetProxy = D2D38F441FBB8531007FBEAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2D38F2B1FBB8531007FBEAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D38F2C1FBB8531007FBEAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2D38F301FBB8531007FBEAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D38F311FBB8531007FBEAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2D38F4A1FBB8531007FBEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2D38F4B1FBB8531007FBEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2D38F4D1FBB8531007FBEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillboardSongs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BillboardSongs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2D38F4E1FBB8531007FBEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillboardSongs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BillboardSongs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2D38F501FBB8531007FBEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillboardSongsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BillboardSongsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillboardSongs.app/BillboardSongs";
+			};
+			name = Debug;
+		};
+		D2D38F511FBB8531007FBEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillboardSongsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BillboardSongsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillboardSongs.app/BillboardSongs";
+			};
+			name = Release;
+		};
+		D2D38F531FBB8531007FBEAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillboardSongsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BillboardSongsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BillboardSongs;
+			};
+			name = Debug;
+		};
+		D2D38F541FBB8531007FBEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillboardSongsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BillboardSongsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BillboardSongs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2D38F1F1FBB8531007FBEAB /* Build configuration list for PBXProject "BillboardSongs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D38F4A1FBB8531007FBEAB /* Debug */,
+				D2D38F4B1FBB8531007FBEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D38F4C1FBB8531007FBEAB /* Build configuration list for PBXNativeTarget "BillboardSongs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D38F4D1FBB8531007FBEAB /* Debug */,
+				D2D38F4E1FBB8531007FBEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D38F4F1FBB8531007FBEAB /* Build configuration list for PBXNativeTarget "BillboardSongsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D38F501FBB8531007FBEAB /* Debug */,
+				D2D38F511FBB8531007FBEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D38F521FBB8531007FBEAB /* Build configuration list for PBXNativeTarget "BillboardSongsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D38F531FBB8531007FBEAB /* Debug */,
+				D2D38F541FBB8531007FBEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2D38F1C1FBB8531007FBEAB /* Project object */;
+}

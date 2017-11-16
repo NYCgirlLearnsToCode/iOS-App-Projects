@@ -1,0 +1,33 @@
+{
+    "meta": {
+        "date_requested": "2017-07-07 17:23:50 +0000"
+    },
+    "pods": [
+             {
+             "podcast": "Pod Save America",
+             "producer": "Crooked Media",
+             "url": "https://itunes.apple.com/us/podcast/pod-save-america/id1192761536?mt=2",
+             "episodes": [
+                          {
+                          "title": "Making Redistricting Sexy Again...",
+                          "time": "1hr 19min",
+                          "released": "June 6 2017",
+                          "number": 1
+                          }
+                          ]
+             },
+             {
+             "podcast": "The Daily",
+             "producer": "New York Times",
+             "url": "https://itunes.apple.com/us/podcast/the-daily/id1200361736?mt=2",
+             "episodes": [
+                          {
+                          "title": "Friday July 7th",
+                          "time": "22min",
+                          "released": "June 7 2017",
+                          "number": 1
+                          }
+                          ]
+             }
+             ]
+}
