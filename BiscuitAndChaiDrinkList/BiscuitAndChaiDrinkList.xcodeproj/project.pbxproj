@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D26EA4331FC5FDBC00BE453C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4321FC5FDBC00BE453C /* AppDelegate.swift */; };
+		D26EA4351FC5FDBC00BE453C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4341FC5FDBC00BE453C /* ViewController.swift */; };
+		D26EA4381FC5FDBC00BE453C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26EA4361FC5FDBC00BE453C /* Main.storyboard */; };
+		D26EA43A1FC5FDBC00BE453C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D26EA4391FC5FDBC00BE453C /* Assets.xcassets */; };
+		D26EA43D1FC5FDBC00BE453C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26EA43B1FC5FDBC00BE453C /* LaunchScreen.storyboard */; };
+		D26EA4481FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4471FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.swift */; };
+		D26EA4531FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4521FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.swift */; };
+		D26EA4611FC5FDE100BE453C /* drinklist.json in Resources */ = {isa = PBXBuildFile; fileRef = D26EA4601FC5FDE100BE453C /* drinklist.json */; };
+		D26EA4631FC5FE0D00BE453C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4621FC5FE0D00BE453C /* Drink.swift */; };
+		D26EA4691FC8CABA00BE453C /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4681FC8CABA00BE453C /* DrinkTableViewCell.swift */; };
+		D2B97D0A1FC9342000BEC9E3 /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B97D091FC9342000BEC9E3 /* DrinkDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D26EA4441FC5FDBC00BE453C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D26EA4271FC5FDBC00BE453C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D26EA42E1FC5FDBC00BE453C;
+			remoteInfo = BiscuitAndChaiDrinkList;
+		};
+		D26EA44F1FC5FDBC00BE453C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D26EA4271FC5FDBC00BE453C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D26EA42E1FC5FDBC00BE453C;
+			remoteInfo = BiscuitAndChaiDrinkList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D26EA42F1FC5FDBC00BE453C /* BiscuitAndChaiDrinkList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiscuitAndChaiDrinkList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26EA4321FC5FDBC00BE453C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D26EA4341FC5FDBC00BE453C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D26EA4371FC5FDBC00BE453C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D26EA4391FC5FDBC00BE453C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D26EA43C1FC5FDBC00BE453C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D26EA43E1FC5FDBC00BE453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D26EA4431FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiscuitAndChaiDrinkListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26EA4471FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiscuitAndChaiDrinkListTests.swift; sourceTree = "<group>"; };
+		D26EA4491FC5FDBC00BE453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D26EA44E1FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiscuitAndChaiDrinkListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26EA4521FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiscuitAndChaiDrinkListUITests.swift; sourceTree = "<group>"; };
+		D26EA4541FC5FDBC00BE453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D26EA4601FC5FDE100BE453C /* drinklist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drinklist.json; sourceTree = "<group>"; };
+		D26EA4621FC5FE0D00BE453C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		D26EA4681FC8CABA00BE453C /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		D2B97D091FC9342000BEC9E3 /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D26EA42C1FC5FDBC00BE453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26EA4401FC5FDBC00BE453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26EA44B1FC5FDBC00BE453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D26EA4261FC5FDBC00BE453C = {
+			isa = PBXGroup;
+			children = (
+				D26EA4601FC5FDE100BE453C /* drinklist.json */,
+				D26EA4621FC5FE0D00BE453C /* Drink.swift */,
+				D26EA4311FC5FDBC00BE453C /* BiscuitAndChaiDrinkList */,
+				D26EA4461FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests */,
+				D26EA4511FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests */,
+				D26EA4301FC5FDBC00BE453C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D26EA4301FC5FDBC00BE453C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D26EA42F1FC5FDBC00BE453C /* BiscuitAndChaiDrinkList.app */,
+				D26EA4431FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.xctest */,
+				D26EA44E1FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D26EA4311FC5FDBC00BE453C /* BiscuitAndChaiDrinkList */ = {
+			isa = PBXGroup;
+			children = (
+				D26EA4321FC5FDBC00BE453C /* AppDelegate.swift */,
+				D26EA4341FC5FDBC00BE453C /* ViewController.swift */,
+				D26EA4681FC8CABA00BE453C /* DrinkTableViewCell.swift */,
+				D26EA4361FC5FDBC00BE453C /* Main.storyboard */,
+				D2B97D091FC9342000BEC9E3 /* DrinkDetailViewController.swift */,
+				D26EA4391FC5FDBC00BE453C /* Assets.xcassets */,
+				D26EA43B1FC5FDBC00BE453C /* LaunchScreen.storyboard */,
+				D26EA43E1FC5FDBC00BE453C /* Info.plist */,
+			);
+			path = BiscuitAndChaiDrinkList;
+			sourceTree = "<group>";
+		};
+		D26EA4461FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests */ = {
+			isa = PBXGroup;
+			children = (
+				D26EA4471FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.swift */,
+				D26EA4491FC5FDBC00BE453C /* Info.plist */,
+			);
+			path = BiscuitAndChaiDrinkListTests;
+			sourceTree = "<group>";
+		};
+		D26EA4511FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D26EA4521FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.swift */,
+				D26EA4541FC5FDBC00BE453C /* Info.plist */,
+			);
+			path = BiscuitAndChaiDrinkListUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D26EA42E1FC5FDBC00BE453C /* BiscuitAndChaiDrinkList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D26EA4571FC5FDBC00BE453C /* Build configuration list for PBXNativeTarget "BiscuitAndChaiDrinkList" */;
+			buildPhases = (
+				D26EA42B1FC5FDBC00BE453C /* Sources */,
+				D26EA42C1FC5FDBC00BE453C /* Frameworks */,
+				D26EA42D1FC5FDBC00BE453C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiscuitAndChaiDrinkList;
+			productName = BiscuitAndChaiDrinkList;
+			productReference = D26EA42F1FC5FDBC00BE453C /* BiscuitAndChaiDrinkList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D26EA4421FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D26EA45A1FC5FDBC00BE453C /* Build configuration list for PBXNativeTarget "BiscuitAndChaiDrinkListTests" */;
+			buildPhases = (
+				D26EA43F1FC5FDBC00BE453C /* Sources */,
+				D26EA4401FC5FDBC00BE453C /* Frameworks */,
+				D26EA4411FC5FDBC00BE453C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D26EA4451FC5FDBC00BE453C /* PBXTargetDependency */,
+			);
+			name = BiscuitAndChaiDrinkListTests;
+			productName = BiscuitAndChaiDrinkListTests;
+			productReference = D26EA4431FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D26EA44D1FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D26EA45D1FC5FDBC00BE453C /* Build configuration list for PBXNativeTarget "BiscuitAndChaiDrinkListUITests" */;
+			buildPhases = (
+				D26EA44A1FC5FDBC00BE453C /* Sources */,
+				D26EA44B1FC5FDBC00BE453C /* Frameworks */,
+				D26EA44C1FC5FDBC00BE453C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D26EA4501FC5FDBC00BE453C /* PBXTargetDependency */,
+			);
+			name = BiscuitAndChaiDrinkListUITests;
+			productName = BiscuitAndChaiDrinkListUITests;
+			productReference = D26EA44E1FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D26EA4271FC5FDBC00BE453C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Lisa J";
+				TargetAttributes = {
+					D26EA42E1FC5FDBC00BE453C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D26EA4421FC5FDBC00BE453C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D26EA42E1FC5FDBC00BE453C;
+					};
+					D26EA44D1FC5FDBC00BE453C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D26EA42E1FC5FDBC00BE453C;
+					};
+				};
+			};
+			buildConfigurationList = D26EA42A1FC5FDBC00BE453C /* Build configuration list for PBXProject "BiscuitAndChaiDrinkList" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D26EA4261FC5FDBC00BE453C;
+			productRefGroup = D26EA4301FC5FDBC00BE453C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D26EA42E1FC5FDBC00BE453C /* BiscuitAndChaiDrinkList */,
+				D26EA4421FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests */,
+				D26EA44D1FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D26EA42D1FC5FDBC00BE453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26EA43D1FC5FDBC00BE453C /* LaunchScreen.storyboard in Resources */,
+				D26EA43A1FC5FDBC00BE453C /* Assets.xcassets in Resources */,
+				D26EA4611FC5FDE100BE453C /* drinklist.json in Resources */,
+				D26EA4381FC5FDBC00BE453C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26EA4411FC5FDBC00BE453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26EA44C1FC5FDBC00BE453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D26EA42B1FC5FDBC00BE453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26EA4351FC5FDBC00BE453C /* ViewController.swift in Sources */,
+				D26EA4631FC5FE0D00BE453C /* Drink.swift in Sources */,
+				D26EA4691FC8CABA00BE453C /* DrinkTableViewCell.swift in Sources */,
+				D26EA4331FC5FDBC00BE453C /* AppDelegate.swift in Sources */,
+				D2B97D0A1FC9342000BEC9E3 /* DrinkDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26EA43F1FC5FDBC00BE453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26EA4481FC5FDBC00BE453C /* BiscuitAndChaiDrinkListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26EA44A1FC5FDBC00BE453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26EA4531FC5FDBC00BE453C /* BiscuitAndChaiDrinkListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D26EA4451FC5FDBC00BE453C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D26EA42E1FC5FDBC00BE453C /* BiscuitAndChaiDrinkList */;
+			targetProxy = D26EA4441FC5FDBC00BE453C /* PBXContainerItemProxy */;
+		};
+		D26EA4501FC5FDBC00BE453C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D26EA42E1FC5FDBC00BE453C /* BiscuitAndChaiDrinkList */;
+			targetProxy = D26EA44F1FC5FDBC00BE453C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D26EA4361FC5FDBC00BE453C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D26EA4371FC5FDBC00BE453C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D26EA43B1FC5FDBC00BE453C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D26EA43C1FC5FDBC00BE453C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D26EA4551FC5FDBC00BE453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D26EA4561FC5FDBC00BE453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D26EA4581FC5FDBC00BE453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiscuitAndChaiDrinkList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BiscuitAndChaiDrinkList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D26EA4591FC5FDBC00BE453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiscuitAndChaiDrinkList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BiscuitAndChaiDrinkList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D26EA45B1FC5FDBC00BE453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiscuitAndChaiDrinkListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BiscuitAndChaiDrinkListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiscuitAndChaiDrinkList.app/BiscuitAndChaiDrinkList";
+			};
+			name = Debug;
+		};
+		D26EA45C1FC5FDBC00BE453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiscuitAndChaiDrinkListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BiscuitAndChaiDrinkListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiscuitAndChaiDrinkList.app/BiscuitAndChaiDrinkList";
+			};
+			name = Release;
+		};
+		D26EA45E1FC5FDBC00BE453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiscuitAndChaiDrinkListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BiscuitAndChaiDrinkListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiscuitAndChaiDrinkList;
+			};
+			name = Debug;
+		};
+		D26EA45F1FC5FDBC00BE453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiscuitAndChaiDrinkListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lisa-J.BiscuitAndChaiDrinkListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiscuitAndChaiDrinkList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D26EA42A1FC5FDBC00BE453C /* Build configuration list for PBXProject "BiscuitAndChaiDrinkList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26EA4551FC5FDBC00BE453C /* Debug */,
+				D26EA4561FC5FDBC00BE453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D26EA4571FC5FDBC00BE453C /* Build configuration list for PBXNativeTarget "BiscuitAndChaiDrinkList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26EA4581FC5FDBC00BE453C /* Debug */,
+				D26EA4591FC5FDBC00BE453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D26EA45A1FC5FDBC00BE453C /* Build configuration list for PBXNativeTarget "BiscuitAndChaiDrinkListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26EA45B1FC5FDBC00BE453C /* Debug */,
+				D26EA45C1FC5FDBC00BE453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D26EA45D1FC5FDBC00BE453C /* Build configuration list for PBXNativeTarget "BiscuitAndChaiDrinkListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26EA45E1FC5FDBC00BE453C /* Debug */,
+				D26EA45F1FC5FDBC00BE453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D26EA4271FC5FDBC00BE453C /* Project object */;
+}

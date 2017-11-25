@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var colorView: UIView!
     
      var colorModel = ColorChangingModel()
-   
+   ran
     @IBAction func nextColorPressed(_ sender: UIButton) {
         let (newColor, newName) = colorModel.getNextColor()
         setLabelAndView(newName: newName, newColor: newColor)

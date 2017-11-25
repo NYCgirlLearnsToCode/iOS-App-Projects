@@ -1,0 +1,122 @@
+ [
+  {
+  "id":"1",
+  "Name":"Old Fashioned",
+  "SpecialItems":"Old Fashioned Glass",
+  "NumOfIngredients":"3",
+  "Ingredients":"1. 2 ounces of whiskey (bourbon or rye)\n - Buffalo Trace Bourbon (~$35\/750ml)\n\n2. 1 teaspoon superfine sugar (or 1 sugar cube)\n - Domino Superfine Sugar (~$2\/12oz)\n\n3. 2-3 dashes of bitters\n - Angostura Aromatic Bitters (~$5\/4oz)",
+  "Recipe":"Put the sugar in an Old Fashioned glass.\nPour the drops of bitters in.\nAdd a few drops of water.\nCrush sugar with a spoon\/whatever available, if using sugar cube.\nRotate glass (or stir) so the sugar, bitters and water mix up.\nAdd the whiskey.\nEnjoy.\n\nOptional\n - Add a couple of ice cubes\n - Add a slice of orange and\/or cherry\n - Replace water with club soda",
+  "Image":"http:\/\/s.iamafoodblog.com\/wp-content\/uploads\/2012\/04\/oldfashioned-21.jpg",
+  "Description":"You can never go wrong with this classic American cocktail using bourbon or rye.",
+  "DrinkType":"Whiskey",
+  "Cost":"~$1.80\/Glass"
+  },
+  {
+  "id":"2",
+  "Name":"Black Russian",
+  "SpecialItems":"Old Fashioned Glass",
+  "NumOfIngredients":"2",
+  "Ingredients":"1. 1 3\/4 ounces of vodka\n - Grey Goose (~$40\/750ml)\n\n2. 3\/4 ounces of coffee liqueur \n - Kahlua (~$25\/750ml)",
+  "Recipe":"Fill Old Fashioned glass with ice.\nAdd Vodka.\nAdd Coffee Liqueur.\nStir, or don't.\nEnjoy.",
+  "Image":"http:\/\/cocktailgiant.com\/index.php\/files\/large\/51742004499b3e5",
+  "Description":"Considered a great after-dinner drink, the Black Russian is extremely easy to make. All you need is coffee liqueur and vodka for this delightful drink.",
+  "DrinkType":"Vodka",
+  "Cost":"~$3.50\/Glass"
+  },
+  {
+  "id":"3",
+  "Name":"Margarita",
+  "SpecialItems":"Cocktail Shaker, Chilled Margarita Glass",
+  "NumOfIngredients":"5",
+  "Ingredients":"1. 1 1\/2 ounces tequila\n - 1800 (~$30\/750ml)\n\n2. 1\/2 ounce triple sec \n - Cointreau (~$23\/375ml)\n\n3. 1 ounce fresh lime juice\n\n4. Lime wedge\n\n5. Salt or sugar (optional)",
+  "Recipe":"Pour tequila, triple sec, and fresh lime juice in cocktail shaker with ice.\nShake it well.\nPour into margarita glass.\nPut lime wedge to garnish.\nEnjoy.\n\nOptional\n - Put salt or sugar on the rim of margarita glass.",
+  "Image":"https:\/\/carlanthonyonlinedotcom.files.wordpress.com\/2012\/06\/jcperfectmarg005-hires.jpg",
+  "Description":"A popular drink you probably will never remember having. Margaritas can be made in a variety of ways, and they will always be refreshing. ",
+  "DrinkType":"Tequila",
+  "Cost":"~$3\/Glass"
+  },
+  {
+  "id":"4",
+  "Name":"Dark 'n Stormy",
+  "SpecialItems":"Cocktail Shaker, Collins Glass",
+  "NumOfIngredients":"5",
+  "Ingredients":"1. 2 ounces dark rum\r\n - Gosling's Black Seal Rum(~$23\/750ml)\r\n3 ounces chilled ginger beer\r\n - Gosling's Ginger Beer(~$6\/6-pack 12oz cans)\r\n1 lime wedge\r\n1\/2 ounce fresh lime juice (optional)\r\n",
+  "Recipe":"Fill a cocktail shaker with ice. \r\nAdd the rum and lime juice, shake well. \r\nStrain into collins glass with ice. \r\nStir in ginger beer. \r\nGarnish cocktail with lime wedge.\r\nEnjoy.",
+  "Image":"http:\/\/www.georgetowner.com\/media\/images\/derivatives\/article_DarknStormy_TallGlass_091.jpg",
+  "Description":"Called so because of it's ominous color, don't forget to use Gosling's Black Seal rum to do it right.",
+  "DrinkType":"Rum",
+  "Cost":"~$2.25\/Glass"
+  },
+  {
+  "id":"5",
+  "Name":"Mimosa",
+  "SpecialItems":"Champagne\/Wine Glass",
+  "NumOfIngredients":"2",
+  "Ingredients":"1. 2 ounces chilled sparkling champagne\r\n - Barefoot Bubbly Brut Cuvee (~$9\/750ml)\r\n\r\n2. 2 ounces orange juice\r\n - Simply Orange (~$4.50\/59oz)\r\n\r\n3. 1\/2 ounce triple sec (optional)\r\n - Cointreau (~$23\/375ml)",
+  "Recipe":"1. Pour chilled champagne into champagne or wine glass.\r\n\r\n(Optional). Add triple sec.\r\n\r\n2. Add orange juice.\r\n\r\n3. Let rest, don't stir.\r\n\r\n4. Enjoy.",
+  "Image":"http:\/\/thehoochlife.com\/wp-content\/uploads\/2012\/02\/mimosa-266x399.jpg",
+  "Description":"The perfect compliment to brunch, this is a great bubbly drink for any time of the year!",
+  "DrinkType":"Champagne",
+  "Cost":"~$2\/Glass"
+  },
+  {
+  "id":"6",
+  "Name":"Daiquiri",
+  "SpecialItems":"Cocktail Shaker",
+  "NumOfIngredients":"5",
+  "Ingredients":"1. 2 1\/12 ounces white rum\r\n - Bacardi Superior Premium Rum (~$20\/750ml)\r\n\r\n2. 1 1\/2 ounces fresh lime juice\r\n\r\n3. 4 teaspoons superfine sugar\r\n - Domino Superfine Sugar (~$2\/12oz)\r\n\r\n4. Ice\r\n\r\n5. Lime wedge (optional)",
+  "Recipe":"1. Add rum, lime juice and sugar into cocktail shaker.\r\n\r\n2. Stir until sugar is dissolved.\r\n\r\n3. Add ice, shake until chilled.\r\n\r\n(Optional) - Add lime wedge.\r\n\r\n4. Enjoy.",
+  "Image":"http:\/\/www.bevdig.com\/uploads\/2\/6\/7\/4\/26740497\/2857864_orig.jpg",
+  "Description":"Originating from Cuba, the daiquiri is a great and classic cocktail.",
+  "DrinkType":"Rum",
+  "Cost":"~$3\/Glass"
+  },
+  {
+  "id":"7",
+  "Name":"Manhattan",
+  "SpecialItems":"Pint Glass",
+  "NumOfIngredients":"5",
+  "Ingredients":"1. 2 ounces rye whiskey\r\n - Wild Turkey 101 (~$21\/750ml)\r\n\r\n2. 1 ounce sweet vermouth\r\n - Martini & Rossi Sweet Vermouth (~$10\/1L)\r\n\r\n3. 2 dashes of bitters\r\n - Angostura Aromatic Bitters (~$5\/4oz)\r\n\r\n4. Ice\r\n\r\n5. Maraschino cherry for garnish\r\n - The Royal Cherry Maraschino Cherries with Stems (~$3\/10oz)",
+  "Recipe":"1. Fill pint glass with ice.\n\n2. Add rye whiskey, sweet vermouth, and bitters.\n\n3. Stir well.\n\n4. Strain into chilled glass.\n\n(Optional) - Garnish with a cherry.\n\n5. Enjoy.",
+  "Image":"http:\/\/retail.royalleerdam.com\/var\/libbey\/storage\/images\/retail-home\/article-repository\/twins-manhattan-cocktail-recipe\/100878-2-eng-US\/Twins-Manhattan-Cocktail-Recipe.jpg",
+  "Description":"A popular drink said to have originated from a Manhattan club, this cocktail mixes rye whiskey and sweet vermouth for a sweet taste with a nice kick.",
+  "DrinkType":"Whiskey",
+  "Cost":"~$2.30\/Glass"
+  },
+  {
+  "id":"8",
+  "Name":"Gin and Tonic",
+  "SpecialItems":"Highball Glass",
+  "NumOfIngredients":"4",
+  "Ingredients":"1. 2 ounces gin\r\n - Beefeater Gin (~$18\/750ml)\r\n\r\n2. 5 ounces tonic water\r\n - Canada Dry Tonic Water (~$2\/1L)\r\n\r\n3. 1 lime wedge (optional)\r\n",
+  "Recipe":"1. Fill highball glass with ice cubes.\r\n\r\n2. Add gin and tonic water.\r\n\r\n3. Stir well. \r\n\r\n(Optional) - Garnish with the lime wedge.\r\n\r\n4. Enjoy.",
+  "Image":"http:\/\/www.ginandtonicjuly.com\/images\/gin-and-tonic.jpg",
+  "Description":"A classic cocktail made with only two ingredients that complement each other perfectly.",
+  "DrinkType":"Gin",
+  "Cost":"~$1.80\/Glass"
+  },
+  {
+  "id":"9",
+  "Name":"Cosmopolitan",
+  "SpecialItems":"Cocktail Shaker, Martini Glass",
+  "NumOfIngredients":"5",
+  "Ingredients":"1. 1 ounce vodka\r\n - Grey Goose L'Orange (~$40\/750ml)\r\n\r\n2. 1\/2 ounce triple sec\r\n - Cointreau (~$20\/375ml)\r\n\r\n3. 1\/2 ounce fresh lime juice\r\n\r\n4. 1\/2 ounce cranberry juice\r\n - Ocean Spray (~$5\/64oz)\r\n\r\n5. Orange peel or lime wedge (optional)",
+  "Recipe":"1. Add vodka, triple sec, lime juice and cranberry juice to cocktail shaker with ice. \r\n\r\n2. Shake it up.\r\n\r\n3. Strain into martini glass.\r\n\r\n(Optional) - Garnish with orange peel or lime wedge.\r\n\r\n4. Enjoy.",
+  "Image":"https:\/\/www.stirrings.com\/sites\/default\/files\/CosmoGlassNoRim.jpg",
+  "Description":"Whether you've watched Sex and the City or not, you know people who did, and there was a time they would not stop drinking Cosmos, there's a reason for that, try it!",
+  "DrinkType":"Vodka",
+  "Cost":"~$2.60\/Glass"
+  },
+  {
+  "id":"10",
+  "Name":"Long Island Iced Tea",
+  "SpecialItems":"Cocktail Shaker, Collins Glass",
+  "NumOfIngredients":"8",
+  "Ingredients":"1. 1\/2 ounce triple sec\r\n - Cointreau (~$20\/375ml)\r\n\r\n2. 1\/2 ounce light rum\r\n - Bacardi Light Rum (~$15\/750ml)\r\n\r\n3. 1\/2 ounce gin\r\n - Beefeater (~$28\/750ml)\r\n\r\n4. 1\/2 ounce vodka\r\n - Grey Goose (~$40\/750ml)\r\n\r\n5. 1\/2 ounce tequila\r\n - Jose Cuervo (~$20\/750ml)\r\n\r\n6. 1 ounce sour mix\r\n - Mr & Mrs T Sweet And Sour Mix (~$4\/34oz)\r\n\r\n7. Coca Cola \r\n\r\n8. Lemon wedge (optional)",
+  "Recipe":"1. Add triple sec, light rum, gin, and vodka to glass with ice.\r\n\r\n2. Put into cocktail shaker.\r\n\r\n3. Shake or stir.\r\n\r\n4. Top with a little Coca Cola.\r\n\r\n(Optional) - Add lemon wedge for garnish",
+  "Image":"http:\/\/top-10-list.org\/wp-content\/uploads\/2013\/05\/Long-Island-Ice-Tea.jpg",
+  "Description":"Even though the recipe doesn't include tea, it does kind of taste like it, be careful with this one, it's as easy to drink as it is easy to pass out with.",
+  "DrinkType":"Vodka",
+  "Cost":"~$1.90\/Glass"
+  }
+  ]
