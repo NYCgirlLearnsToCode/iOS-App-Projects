@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         loadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     func loadData() {
         if let path = Bundle.main.path(forResource: "drinklist", ofType: "json") {
             let myURL = URL(fileURLWithPath: path)
@@ -50,17 +50,43 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let drink = drinkList[indexPath.row]
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "Drink cell", for: indexPath)
         if let cell = cell as? DrinkTableViewCell {
-        cell.testLabel.text = drink.Name
+            cell.testLabel.text = drink.Name
+            
+            if let url = URL(string: drink.Image) {
+                DispatchQueue.global().sync {
+                    //loading async
+                    print("1")
+                    if let data = try? Data.init(contentsOf: url) {
+                        //updates UI on main thread
+                        print("2")
+                        DispatchQueue.main.async {
+                            print("3")
+                            cell.rightAlignedImg.image = UIImage(data: data)
+                        }
+                    }
+                }
+            }
         }
         return cell
     }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Drink List"
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        header.textLabel?.font = UIFont(name: "System", size: 14.0)
+        header.textLabel?.textAlignment = NSTextAlignment.center
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "drinksegue" {
             if let destination = segue.destination as? DrinkDetailViewController {
-                    let row = tableView.indexPathForSelectedRow!.row
-                    destination.drink = self.drinkList[row]
+                let row = tableView.indexPathForSelectedRow!.row
+                destination.drink = self.drinkList[row]
             }
         }
     }
+    
 }
 

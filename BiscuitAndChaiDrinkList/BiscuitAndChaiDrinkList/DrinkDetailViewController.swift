@@ -13,10 +13,14 @@ class DrinkDetailViewController: UIViewController {
     var drink: DrinkWrapper!
     
     @IBOutlet weak var drinkDetailImage: UIImageView!
+    @IBOutlet weak var drinkNameLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        print("details")
+        loadImg()
+        updateUI()
         // Do any additional setup after loading the view.
     }
 
@@ -36,6 +40,10 @@ class DrinkDetailViewController: UIViewController {
                 }
             }
         }
+    func updateUI() {
+        drinkNameLabel.text = drink.Name
+        textView.text = "Ingredients:\n\(drink.Ingredients) \n\nRecipe: \n\(drink.Recipe)"
+    }
         
     }
 

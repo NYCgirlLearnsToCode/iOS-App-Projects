@@ -18,6 +18,7 @@
 		D26EA4631FC5FE0D00BE453C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4621FC5FE0D00BE453C /* Drink.swift */; };
 		D26EA4691FC8CABA00BE453C /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26EA4681FC8CABA00BE453C /* DrinkTableViewCell.swift */; };
 		D2B97D0A1FC9342000BEC9E3 /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B97D091FC9342000BEC9E3 /* DrinkDetailViewController.swift */; };
+		D2BA0FD61FCB772B003C0D14 /* RandomDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA0FD51FCB772B003C0D14 /* RandomDrinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D26EA4621FC5FE0D00BE453C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		D26EA4681FC8CABA00BE453C /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
 		D2B97D091FC9342000BEC9E3 /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
+		D2BA0FD51FCB772B003C0D14 /* RandomDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDrinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				D26EA4341FC5FDBC00BE453C /* ViewController.swift */,
 				D26EA4681FC8CABA00BE453C /* DrinkTableViewCell.swift */,
 				D26EA4361FC5FDBC00BE453C /* Main.storyboard */,
+				D2BA0FD51FCB772B003C0D14 /* RandomDrinkViewController.swift */,
 				D2B97D091FC9342000BEC9E3 /* DrinkDetailViewController.swift */,
 				D26EA4391FC5FDBC00BE453C /* Assets.xcassets */,
 				D26EA43B1FC5FDBC00BE453C /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 			files = (
 				D26EA4351FC5FDBC00BE453C /* ViewController.swift in Sources */,
 				D26EA4631FC5FE0D00BE453C /* Drink.swift in Sources */,
+				D2BA0FD61FCB772B003C0D14 /* RandomDrinkViewController.swift in Sources */,
 				D26EA4691FC8CABA00BE453C /* DrinkTableViewCell.swift in Sources */,
 				D26EA4331FC5FDBC00BE453C /* AppDelegate.swift in Sources */,
 				D2B97D0A1FC9342000BEC9E3 /* DrinkDetailViewController.swift in Sources */,
