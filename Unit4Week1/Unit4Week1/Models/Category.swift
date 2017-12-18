@@ -14,6 +14,7 @@ struct CategoryWrapper: Codable {
 
 struct CategoryInfo: Codable {
     let list_name: String
+    let list_name_encoded: String
 }
 
 class CategoryAPIClient {
