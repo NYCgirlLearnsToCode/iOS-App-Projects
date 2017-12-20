@@ -10,7 +10,7 @@ import UIKit
 
 class BestSellerCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textView: UITextView!
     
-    @IBOutlet weak var shortDescripLabel: UILabel!
     @IBOutlet weak var weeksLabel: UILabel!
 }

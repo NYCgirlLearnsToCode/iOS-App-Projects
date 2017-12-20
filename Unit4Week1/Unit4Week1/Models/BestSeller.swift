@@ -8,15 +8,21 @@
 
 import Foundation
 
-struct BestSellerWrapper: Codable {
+struct BestSeller: Codable {
     let results: [BestSellerInfo]
 }
 struct BestSellerInfo: Codable {
     let weeks_on_list: Int
     let isbns: [IsbnInfo]
+    let book_details: [BookDescrip]
 }
 struct IsbnInfo: Codable {
     let isbn10: String
+}
+struct BookDescrip: Codable {
+    let description: String
+    let primary_isbn13: String
+    let primary_isbn10: String
 }
 
 class BestSellerAPIClient {
@@ -27,7 +33,7 @@ class BestSellerAPIClient {
         let request = URLRequest(url: url)
         let completion: (Data) -> Void = {(data: Data) in
             do {
-                let allResults = try JSONDecoder().decode(BestSellerWrapper.self, from: data)
+                let allResults = try JSONDecoder().decode(BestSeller.self, from: data)
                 let bestSellers = allResults.results
                 completionHandler(bestSellers)
             } catch{

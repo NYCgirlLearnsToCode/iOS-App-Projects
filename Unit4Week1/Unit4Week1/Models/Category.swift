@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CategoryWrapper: Codable {
+struct Category: Codable {
     let results: [CategoryInfo]
 }
 
@@ -25,7 +25,7 @@ class CategoryAPIClient {
         let request = URLRequest(url: url)
         let completion: (Data) -> Void = {(data: Data) in
             do {
-                let allResults = try JSONDecoder().decode(CategoryWrapper.self, from: data)
+                let allResults = try JSONDecoder().decode(Category.self, from: data)
                 let categories = allResults.results
                 completionHandler(categories)
             }

@@ -11,6 +11,7 @@ import UIKit
 class BestSellersViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
     @IBOutlet weak var pickerView: UIPickerView!
     
     var categories = [CategoryInfo]() {
@@ -21,6 +22,9 @@ class BestSellersViewController: UIViewController {
         
     }
     var selectedCategory = ""
+    var isbn = ""
+    var googleBooks = [GoogleBookWrapper]()
+    var googleSmallImg = ""
     var bestSellers = [BestSellerInfo]() {
         didSet {
             DispatchQueue.main.async{
@@ -38,6 +42,7 @@ class BestSellersViewController: UIViewController {
         collectionView.delegate = self
         loadData()
         loadBestSellers()
+        //loadGoogleBook()
         
         
     }
@@ -60,6 +65,25 @@ class BestSellersViewController: UIViewController {
         }
         print("loaded",selectedCategory)
         BestSellerAPIClient.manager.getBestSellers(from: urlStr, completionHandler: setBestSellers, errorHandler: {print($0, "error getting best sellers")})
+    }
+    
+    func loadGoogleBook() {
+        let key = "AIzaSyC4H3SJt83MHITUMcOKPfo9oCCFygNf7Dk"
+        let url = "https://www.googleapis.com/books/v1/volumes?q=+isbn:\(isbn)&key=\(key)"
+        print("FROM LOAD GOOGLE BOOK \(url)")
+        let completion: ([GoogleBookWrapper]) -> Void = {(onlineBooks: [GoogleBookWrapper]) in
+            self.googleBooks = onlineBooks
+            
+        }
+//        GoogleBookAPIClient.manager.getBooks(from: url, completionHandler: completion, errorHandler: {print($0)})
+        //same photos time after time maybe because isbn in url is never reset?
+        //have to make an api call with each new url?
+        // print(url)
+        
+    }
+    
+    func loadImage() {
+        let url = ""
     }
     
 }
@@ -90,6 +114,10 @@ extension BestSellersViewController: UIPickerViewDataSource, UIPickerViewDelegat
             break
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //        let bestSeller = bestSellers[collectionView.indexPathF]
+        let destination = segue.destination as? BestSellerDetailViewController
+    }
 }
 
 extension BestSellersViewController: UICollectionViewDataSource {
@@ -100,8 +128,52 @@ extension BestSellersViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let bestSeller = bestSellers[indexPath.row]
+        let googleBook = googleBooks.first
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BestSellerCell", for: indexPath) as! BestSellerCell
+        
         cell.weeksLabel.text = "\(bestSeller.weeks_on_list) weeks on the best seller list"
+        isbn = bestSeller.book_details[0].primary_isbn13
+        print(isbn)
+        print("isbn 13 \(bestSeller.book_details[0].primary_isbn13)")
+        let url = "https://www.googleapis.com/books/v1/volumes?q=+isbn:\(isbn)&key=AIzaSyC4H3SJt83MHITUMcOKPfo9oCCFygNf7Dk"
+        print(url)
+        let completion: ([GoogleBookWrapper]) -> Void = {(onlineBooks: [GoogleBookWrapper]) in
+            let imageUrlStr = onlineBooks[0].volumeInfo.imageLinks.smallThumbnail
+            
+            let completion2: (UIImage?) -> Void = {(onlineImage: UIImage?) in
+                if onlineImage == nil {
+                    cell.imageView.image = #imageLiteral(resourceName: "na")
+//                    self.isbn = bestSeller.book_details[0].primary_isbn10
+//                    ImageAPIClient.manager.getImage(from: imageUrlStr, completionHandler: {cell.imageView.image = $0 }, errorHandler: {print($0)})
+                }else{
+                    
+                    if let onlineImage = onlineImage {
+                cell.imageView?.image = onlineImage
+                        print("set image")
+                cell.setNeedsLayout()
+                    }
+                }
+            }
+                ImageAPIClient.manager.getImage(from: imageUrlStr, completionHandler: completion2, errorHandler: {print($0)})
+        }
+        GoogleBookAPIClient.manager.getBooks(from: url, completionHandler: completion, errorHandler: {print($0)})
+//        print("url is \(url)")
+        if let bookdescrip = bestSeller.book_details.first?.description {
+            cell.textView.text = "\(bookdescrip)"
+            if bookdescrip == "" {
+                cell.textView.text = "Book descrip is n/a"
+            }
+            //loadGoogleBook()
+//            if let googleSmallImg = googleBook?.volumeInfo.imageLinks.thumbnail {
+//                print("set image to \(googleSmallImg)")
+//                let completion: (UIImage) -> Void = {(onlineImage: UIImage) in
+//                    cell.imageView?.image = onlineImage
+//                    cell.setNeedsLayout()
+//                }
+//                ImageAPIClient.manager.getImage(from: googleSmallImg, completionHandler: completion, errorHandler: {print($0)})
+//                print(googleBook!.volumeInfo.imageLinks.smallThumbnail)
+        }
+        
         
         
         return cell
