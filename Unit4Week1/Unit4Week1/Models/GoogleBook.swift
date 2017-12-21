@@ -15,11 +15,12 @@ struct GoogleBook: Codable {
 struct GoogleBookWrapper: Codable {
     let searchInfo: GoogleBookShortWrapper?
     let volumeInfo: GoogleBookInfoWrapper
-    let description: String?
 }
 
 struct GoogleBookInfoWrapper: Codable {
     let imageLinks: ImageInfo
+    let description: String
+    let subtitle: String?
 }
 
 struct ImageInfo: Codable {
@@ -34,16 +35,18 @@ struct GoogleBookShortWrapper: Codable {
 class GoogleBookAPIClient {
     private init () {}
     static let manager = GoogleBookAPIClient()
-    func getBooks(from urlStr: String, completionHandler: @escaping ([GoogleBookWrapper]) -> Void, errorHandler: @escaping (Error) -> Void) {
+    func getBooks(from urlStr: String, completionHandler: @escaping (GoogleBookWrapper) -> Void, errorHandler: @escaping (Error) -> Void) {
         guard let url = URL(string: urlStr) else  {return}
         let request = URLRequest(url:url)
         let completion: (Data) -> Void = {(data: Data) in
             do {
                 let allResults = try JSONDecoder().decode(GoogleBook.self, from: data)
-                let books = allResults.items
-                //if let books = books {
-                completionHandler(books)
-               // }else{
+                let books = allResults.items.first
+                if let books = books {
+                    completionHandler(books)
+                }else{
+                    errorHandler(AppError.noData)
+                }
             } catch {
                 errorHandler(error)
             }

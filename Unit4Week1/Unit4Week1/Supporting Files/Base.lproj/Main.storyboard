@@ -72,7 +72,7 @@
                                             <outlet property="imageView" destination="bJj-4h-4kC" id="xEz-fK-AuQ"/>
                                             <outlet property="textView" destination="Iz9-KN-d53" id="rVh-is-Vfa"/>
                                             <outlet property="weeksLabel" destination="urx-FN-ep0" id="GQ6-wn-6R7"/>
-                                            <segue destination="xGC-zz-5ei" kind="show" id="fIA-VN-woG"/>
+                                            <segue destination="xGC-zz-5ei" kind="show" identifier="detailsegue" id="fIA-VN-woG"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141.5999999999999" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1242" y="116"/>
         </scene>
         <!--Best Seller Detail View Controller-->
         <scene sceneID="LlY-Lr-vfe">
@@ -111,13 +111,31 @@
                     <view key="view" contentMode="scaleToFill" id="q5n-iF-vFY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsp-gh-jeq">
+                                <rect key="frame" x="67" y="169" width="240" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Coj-MI-Mwa">
+                                <rect key="frame" x="67" y="442" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b4G-os-b3y"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="gsp-gh-jeq" id="Ex6-Fd-DkH"/>
+                        <outlet property="textView" destination="Coj-MI-Mwa" id="0rh-pQ-q1i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGa-VC-fzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="116"/>
+            <point key="canvasLocation" x="2015" y="116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W1y-zh-Wz6">
@@ -133,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjp-Na-git" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="822"/>
+            <point key="canvasLocation" x="1241" y="822"/>
         </scene>
         <!--Best Sellers-->
         <scene sceneID="gsy-Pk-Bk0">
@@ -168,11 +186,12 @@
                     <connections>
                         <segue destination="tdd-zp-zR5" kind="relationship" relationship="viewControllers" id="E1L-BT-iHD"/>
                         <segue destination="X1D-un-COL" kind="relationship" relationship="viewControllers" id="UJf-He-nFm"/>
+                        <segue destination="oc4-bR-8HR" kind="relationship" relationship="viewControllers" id="JyD-9V-p6K"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0s5-oa-Z5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="116"/>
+            <point key="canvasLocation" x="-287" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KNC-lo-XmR">
@@ -192,6 +211,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cT-cw-VGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="478" y="822"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="smp-WB-BXP">
+            <objects>
+                <viewController id="oc4-bR-8HR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CwO-Rm-Yl2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3I-lF-Hco">
+                                <rect key="frame" x="28" y="226" width="320" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starting Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-Ww-s7A">
+                                <rect key="frame" x="28" y="154" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a3I-lF-Hco" firstAttribute="centerX" secondItem="CwO-Rm-Yl2" secondAttribute="centerX" id="MOO-8T-Bze"/>
+                            <constraint firstItem="a3I-lF-Hco" firstAttribute="centerY" secondItem="CwO-Rm-Yl2" secondAttribute="centerY" id="NH3-z1-cti"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kJE-0Q-zQN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="31K-N6-U8n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8X-hg-KFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477.60000000000002" y="1534.1829085457273"/>
         </scene>
     </scenes>
     <resources>
