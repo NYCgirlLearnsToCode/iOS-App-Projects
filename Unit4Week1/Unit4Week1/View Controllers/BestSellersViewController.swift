@@ -18,6 +18,7 @@ class BestSellersViewController: UIViewController {
         didSet {
             pickerView.reloadAllComponents()
             //needed to load picker titles
+        pickerView.selectRow(DataModel.selectedPickerRow, inComponent: 0, animated: true)
         }
         
     }
@@ -44,10 +45,11 @@ class BestSellersViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         loadData()
-        loadBestSellers()
-        //loadGoogleBook()
-        
-        
+
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        pickerView.selectRow(DataModel.selectedPickerRow, inComponent: 0, animated: true)
+        loadBestSellers(from: DataModel.selectedsetting)
     }
     
     func loadData() {
@@ -62,9 +64,9 @@ class BestSellersViewController: UIViewController {
                                                 errorHandler: {print($0, "error getting categories")})
     }
     
-    func loadBestSellers() {
+    func loadBestSellers(from selectedRow: String ) {
         let key = "d25bbcfec3b1417b814cb3e5dab750a4"
-        let urlStr = "https://api.nytimes.com/svc/books/v3/lists.json?api-key=\(key)&list=\(selectedCategory)"
+        let urlStr = "https://api.nytimes.com/svc/books/v3/lists.json?api-key=\(key)&list=\(selectedRow)"
         let setBestSellers: ([BestSellerInfo]) -> Void = {(onlineBestSellers: [BestSellerInfo]) in
             self.bestSellers = onlineBestSellers
         }
@@ -94,7 +96,7 @@ extension BestSellersViewController: UIPickerViewDataSource, UIPickerViewDelegat
         switch pickerView {
         case pickerView:
             selectedCategory = self.categories[row].list_name_encoded
-            loadBestSellers()
+            loadBestSellers(from: self.categories[row].list_name_encoded)
             print("in picker switch")
         default:
             break
@@ -108,7 +110,6 @@ extension BestSellersViewController: UIPickerViewDataSource, UIPickerViewDelegat
             if let indexPath = collectionView.indexPath(for: cell) {
                 detailVC?.googleBookDetail = googleBooksDetails
                 detailVC?.image = cell.imageView.image
-            
             }
         }
     }
@@ -156,19 +157,8 @@ extension BestSellersViewController: UICollectionViewDataSource {
             if bookdescrip == "" {
                 cell.textView.text = "Book descrip is n/a"
             }
-            //loadGoogleBook()
-//            if let googleSmallImg = googleBook?.volumeInfo.imageLinks.thumbnail {
-//                print("set image to \(googleSmallImg)")
-//                let completion: (UIImage) -> Void = {(onlineImage: UIImage) in
-//                    cell.imageView?.image = onlineImage
-//                    cell.setNeedsLayout()
-//                }
-//                ImageAPIClient.manager.getImage(from: googleSmallImg, completionHandler: completion, errorHandler: {print($0)})
-//                print(googleBook!.volumeInfo.imageLinks.smallThumbnail)
+           
         }
-        
-        
-        
         return cell
     }
 }

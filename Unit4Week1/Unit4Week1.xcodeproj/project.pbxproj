@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20DFC771FEB6716006C8B42 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DFC761FEB6716006C8B42 /* FavoritesViewController.swift */; };
+		D20DFC791FEB825E006C8B42 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DFC781FEB825E006C8B42 /* Favorites.swift */; };
+		D20DFC9B1FEC319F006C8B42 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DFC9A1FEC319F006C8B42 /* SettingsViewController.swift */; };
+		D20DFC9D1FEC3BA1006C8B42 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DFC9C1FEC3BA1006C8B42 /* DataModel.swift */; };
 		D26E96461FE777AF0066A10D /* BestSellerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E96451FE777AF0066A10D /* BestSellerCell.swift */; };
 		D275C0301FE8B97900379033 /* GoogleBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275C02F1FE8B97900379033 /* GoogleBook.swift */; };
 		D275C05D1FE9B8DF00379033 /* ImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275C05C1FE9B8DF00379033 /* ImageAPIClient.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D20DFC761FEB6716006C8B42 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		D20DFC781FEB825E006C8B42 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		D20DFC9A1FEC319F006C8B42 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Unit4Week1/View Controllers/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		D20DFC9C1FEC3BA1006C8B42 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D26E96451FE777AF0066A10D /* BestSellerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerCell.swift; sourceTree = "<group>"; };
 		D275C02F1FE8B97900379033 /* GoogleBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBook.swift; sourceTree = "<group>"; };
 		D275C05C1FE9B8DF00379033 /* ImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIClient.swift; sourceTree = "<group>"; };
@@ -85,6 +93,8 @@
 				D2ABF0A11FE7650B003E81B8 /* BestSeller.swift */,
 				D2ABF09C1FE72C8C003E81B8 /* NetworkHelper.swift */,
 				D275C05C1FE9B8DF00379033 /* ImageAPIClient.swift */,
+				D20DFC781FEB825E006C8B42 /* Favorites.swift */,
+				D20DFC9C1FEC3BA1006C8B42 /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,6 +105,8 @@
 				D26E96451FE777AF0066A10D /* BestSellerCell.swift */,
 				D2ABF08A1FE5F365003E81B8 /* BestSellersViewController.swift */,
 				D275C05E1FE9FC8D00379033 /* BestSellerDetailViewController.swift */,
+				D20DFC761FEB6716006C8B42 /* FavoritesViewController.swift */,
+				D20DFC9A1FEC319F006C8B42 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -186,10 +198,14 @@
 				D2ABF0A21FE7650B003E81B8 /* BestSeller.swift in Sources */,
 				D275C05D1FE9B8DF00379033 /* ImageAPIClient.swift in Sources */,
 				D275C05F1FE9FC8D00379033 /* BestSellerDetailViewController.swift in Sources */,
+				D20DFC791FEB825E006C8B42 /* Favorites.swift in Sources */,
+				D20DFC9D1FEC3BA1006C8B42 /* DataModel.swift in Sources */,
 				D2ABF08B1FE5F365003E81B8 /* BestSellersViewController.swift in Sources */,
 				D2ABF0891FE5F365003E81B8 /* AppDelegate.swift in Sources */,
 				D26E96461FE777AF0066A10D /* BestSellerCell.swift in Sources */,
+				D20DFC771FEB6716006C8B42 /* FavoritesViewController.swift in Sources */,
 				D2ABF09B1FE6ECD6003E81B8 /* Category.swift in Sources */,
+				D20DFC9B1FEC319F006C8B42 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

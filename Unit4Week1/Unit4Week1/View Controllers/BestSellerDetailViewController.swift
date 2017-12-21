@@ -12,6 +12,7 @@ class BestSellerDetailViewController: UIViewController {
     var googleBookDetail: GoogleBookWrapper!
     var image: UIImage!
     
+    @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
   
@@ -20,8 +21,13 @@ class BestSellerDetailViewController: UIViewController {
         super.viewDidLoad()
         textView.text = googleBookDetail?.volumeInfo.description
         
+        subtitleLabel.text = googleBookDetail.volumeInfo.subtitle
         imageView.image = image
     }
     
-   
+    @IBAction func addToFavoritesButtonClicked(_ sender: UIButton) {
+    
+    
+    }
+    
 }
