@@ -24,16 +24,32 @@ class FavoritesViewController: UIViewController {
         super.viewWillAppear(true)
         collectionView.reloadData()
     }
+    
 }
 
 extension FavoritesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return DataModel.shared.getLists().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "favoriteCell", for: indexPath)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "favoriteCell", for: indexPath) as! FavoritesCollectionViewCell
+        let favorite = DataModel.shared.getLists()[indexPath.row]
+        configureFave(favorite: favorite, forCell: cell)
         return cell
+    }
+    func configureFave(favorite: Favorites, forCell cell: FavoritesCollectionViewCell) {
+        cell.titleLabel.text = favorite.title
+        let url = favorite.imageUrl
+        let completion: (UIImage?) -> Void = {(onlineImage: UIImage?) in
+            if let onlineImage = onlineImage {
+                cell.favBookImg.image = onlineImage
+                print("set image")
+                cell.setNeedsLayout()
+            }
+        }
+        ImageAPIClient.manager.getImage(from: url!, completionHandler: completion, errorHandler: {print($0)})
     }
 }
 

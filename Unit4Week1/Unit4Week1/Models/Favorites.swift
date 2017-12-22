@@ -7,10 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
 class Favorites: Codable {
-    //keys
-    
-    
-    
+    //properties
+    let title: String?
+    let imageUrl: String?
     //init
+    init(title: String?, imageUrl: String?) {
+        self.title = title
+        self.imageUrl = imageUrl
+    }//self refers to the what encapsulates it
+    
 }

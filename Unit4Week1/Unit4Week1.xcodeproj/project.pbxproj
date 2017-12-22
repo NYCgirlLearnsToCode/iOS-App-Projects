@@ -23,6 +23,7 @@
 		D2ABF09B1FE6ECD6003E81B8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF09A1FE6ECD6003E81B8 /* Category.swift */; };
 		D2ABF09D1FE72C8C003E81B8 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF09C1FE72C8C003E81B8 /* NetworkHelper.swift */; };
 		D2ABF0A21FE7650B003E81B8 /* BestSeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF0A11FE7650B003E81B8 /* BestSeller.swift */; };
+		D2DB3E291FEC909E0056AFAC /* FavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB3E281FEC909E0056AFAC /* FavoritesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D2ABF09A1FE6ECD6003E81B8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D2ABF09C1FE72C8C003E81B8 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		D2ABF0A11FE7650B003E81B8 /* BestSeller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSeller.swift; sourceTree = "<group>"; };
+		D2DB3E281FEC909E0056AFAC /* FavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		D2ABF09F1FE72D35003E81B8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D2DB3E281FEC909E0056AFAC /* FavoritesCollectionViewCell.swift */,
 				D26E96451FE777AF0066A10D /* BestSellerCell.swift */,
 				D2ABF08A1FE5F365003E81B8 /* BestSellersViewController.swift */,
 				D275C05E1FE9FC8D00379033 /* BestSellerDetailViewController.swift */,
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2DB3E291FEC909E0056AFAC /* FavoritesCollectionViewCell.swift in Sources */,
 				D2ABF09D1FE72C8C003E81B8 /* NetworkHelper.swift in Sources */,
 				D275C0301FE8B97900379033 /* GoogleBook.swift in Sources */,
 				D2ABF0A21FE7650B003E81B8 /* BestSeller.swift in Sources */,

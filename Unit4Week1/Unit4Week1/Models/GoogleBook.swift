@@ -25,7 +25,7 @@ struct GoogleBookInfoWrapper: Codable {
 
 struct ImageInfo: Codable {
     let smallThumbnail: String
-    let thumbnail: String
+    let thumbnail: String?
 }
 
 struct GoogleBookShortWrapper: Codable {
