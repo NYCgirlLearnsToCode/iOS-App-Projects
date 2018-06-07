@@ -28,7 +28,7 @@ struct NetworkHelper {
                 if let error = error {
                     errorHandler(AppError.other(rawError: error))
                 }
-                //if let response = resp
+                
                 completionHandler(data)
             }
         }.resume()

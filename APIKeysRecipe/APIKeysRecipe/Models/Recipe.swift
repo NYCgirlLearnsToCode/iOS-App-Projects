@@ -7,7 +7,23 @@
 //
 
 import Foundation
+struct AllRecipeInfo: Codable {
+    let hits: [RecipeWrapper]
+}
 
-struct Recipe {
+struct RecipeWrapper: Codable {
+    let recipe: Recipe
+}
+
+struct Recipe: Codable {
+    let name: String//here must match new key
+    let image: String
+    let source: String
     
+    enum CodingKeys: String, CodingKey {
+        case name = "label"// string is the orig, have to change above
+        case image
+        case source
+        // have to also list cases of keys that we are not changing too
+    }
 }

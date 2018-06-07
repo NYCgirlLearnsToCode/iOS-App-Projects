@@ -12,6 +12,8 @@
 		D2517F4B1FD5E0D500900C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2517F491FD5E0D500900C81 /* Main.storyboard */; };
 		D2517F4D1FD5E0D500900C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2517F4C1FD5E0D500900C81 /* Assets.xcassets */; };
 		D2517F501FD5E0D500900C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2517F4E1FD5E0D500900C81 /* LaunchScreen.storyboard */; };
+		D2517F581FD5E0F900900C81 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2517F571FD5E0F900900C81 /* NetworkHelper.swift */; };
+		D2517F5B1FD5E24D00900C81 /* Musix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2517F5A1FD5E24D00900C81 /* Musix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D2517F4C1FD5E0D500900C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2517F4F1FD5E0D500900C81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2517F511FD5E0D500900C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2517F571FD5E0F900900C81 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		D2517F5A1FD5E24D00900C81 /* Musix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		D2517F391FD5E0D500900C81 = {
 			isa = PBXGroup;
 			children = (
+				D2517F591FD5E10300900C81 /* Model */,
 				D2517F441FD5E0D500900C81 /* MusixMatch */,
 				D2517F431FD5E0D500900C81 /* Products */,
 			);
@@ -62,6 +67,15 @@
 				D2517F511FD5E0D500900C81 /* Info.plist */,
 			);
 			path = MusixMatch;
+			sourceTree = "<group>";
+		};
+		D2517F591FD5E10300900C81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2517F571FD5E0F900900C81 /* NetworkHelper.swift */,
+				D2517F5A1FD5E24D00900C81 /* Musix.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2517F5B1FD5E24D00900C81 /* Musix.swift in Sources */,
 				D2517F481FD5E0D500900C81 /* ViewController.swift in Sources */,
+				D2517F581FD5E0F900900C81 /* NetworkHelper.swift in Sources */,
 				D2517F461FD5E0D500900C81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

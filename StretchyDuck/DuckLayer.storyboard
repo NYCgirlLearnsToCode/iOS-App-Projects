@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Duck Layer View Controller-->
+        <scene sceneID="9Fg-Hd-5yu">
+            <objects>
+                <viewController storyboardIdentifier="DuckLayerViewController" id="DrO-Mp-uTz" customClass="DuckLayerViewController" customModule="StretchyDuck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6KZ-yz-PDm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck" translatesAutoresizingMaskIntoConstraints="NO" id="aYW-xe-Eeh">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cQ-qj-ION">
+                                <rect key="frame" x="132" y="617" width="110" height="30"/>
+                                <state key="normal" title="Animate"/>
+                                <connections>
+                                    <action selector="animateWithButton:" destination="DrO-Mp-uTz" eventType="touchUpInside" id="ezA-7p-YSQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Ygx-SU-9Ng" firstAttribute="trailing" secondItem="8cQ-qj-ION" secondAttribute="trailing" constant="133" id="5PM-2h-0Hl"/>
+                            <constraint firstItem="8cQ-qj-ION" firstAttribute="leading" secondItem="Ygx-SU-9Ng" secondAttribute="leading" constant="132" id="SXJ-3m-itM"/>
+                            <constraint firstItem="aYW-xe-Eeh" firstAttribute="leading" secondItem="Ygx-SU-9Ng" secondAttribute="leading" constant="87" id="TOA-zd-zgJ"/>
+                            <constraint firstItem="aYW-xe-Eeh" firstAttribute="top" secondItem="Ygx-SU-9Ng" secondAttribute="top" constant="213" id="UXM-Cy-xOB"/>
+                            <constraint firstItem="Ygx-SU-9Ng" firstAttribute="bottom" secondItem="aYW-xe-Eeh" secondAttribute="bottom" constant="234" id="XpD-kz-uP7"/>
+                            <constraint firstItem="Ygx-SU-9Ng" firstAttribute="bottom" secondItem="8cQ-qj-ION" secondAttribute="bottom" constant="20" id="Y20-7B-4mp"/>
+                            <constraint firstItem="Ygx-SU-9Ng" firstAttribute="trailing" secondItem="aYW-xe-Eeh" secondAttribute="trailing" constant="88" id="pH9-b2-RNt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ygx-SU-9Ng"/>
+                    </view>
+                    <connections>
+                        <outlet property="animateButton" destination="8cQ-qj-ION" id="vJP-Xg-4Qe"/>
+                        <outlet property="imageView" destination="aYW-xe-Eeh" id="s6A-rP-MqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kK7-dr-lUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="99.400299850074973"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="duck" width="512" height="512"/>
+    </resources>
+</document>

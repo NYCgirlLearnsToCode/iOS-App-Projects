@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D22E847A201244DA0003F563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E8479201244DA0003F563 /* AppDelegate.swift */; };
+		D22E847C201244DA0003F563 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E847B201244DA0003F563 /* ViewController.swift */; };
+		D22E847F201244DA0003F563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22E847D201244DA0003F563 /* Main.storyboard */; };
+		D22E8481201244DA0003F563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22E8480201244DA0003F563 /* Assets.xcassets */; };
+		D22E8484201244DA0003F563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22E8482201244DA0003F563 /* LaunchScreen.storyboard */; };
+		D22E848C201244F30003F563 /* PlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E848B201244F30003F563 /* PlaceView.swift */; };
+		D22E848E2012485D0003F563 /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E848D2012485D0003F563 /* PlaceViewController.swift */; };
+		D22E849120124D9D0003F563 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E849020124D9D0003F563 /* LocationService.swift */; };
+		D22E849920125D140003F563 /* C4QToCali.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D22E849820125D140003F563 /* C4QToCali.gpx */; };
+		D22E849B20125F600003F563 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E849A20125F600003F563 /* Place.swift */; };
+		D22E849E2012603B0003F563 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E849D2012603B0003F563 /* UserPreferences.swift */; };
+		D22E84A02012659B0003F563 /* YelpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E849F2012659B0003F563 /* YelpAPI.swift */; };
+		D22E84A2201265AF0003F563 /* YelpAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E84A1201265AF0003F563 /* YelpAPIKeys.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D22E8476201244DA0003F563 /* FindASpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindASpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22E8479201244DA0003F563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D22E847B201244DA0003F563 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D22E847E201244DA0003F563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D22E8480201244DA0003F563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D22E8483201244DA0003F563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D22E8485201244DA0003F563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22E848B201244F30003F563 /* PlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceView.swift; sourceTree = "<group>"; };
+		D22E848D2012485D0003F563 /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		D22E849020124D9D0003F563 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D22E8495201256B90003F563 /* C4Q.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = C4Q.gpx; sourceTree = "<group>"; };
+		D22E849820125D140003F563 /* C4QToCali.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = C4QToCali.gpx; sourceTree = "<group>"; };
+		D22E849A20125F600003F563 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		D22E849D2012603B0003F563 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		D22E849F2012659B0003F563 /* YelpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPI.swift; sourceTree = "<group>"; };
+		D22E84A1201265AF0003F563 /* YelpAPIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPIKeys.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D22E8473201244DA0003F563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D22E846D201244DA0003F563 = {
+			isa = PBXGroup;
+			children = (
+				D22E8478201244DA0003F563 /* FindASpot */,
+				D22E8477201244DA0003F563 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D22E8477201244DA0003F563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D22E8476201244DA0003F563 /* FindASpot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D22E8478201244DA0003F563 /* FindASpot */ = {
+			isa = PBXGroup;
+			children = (
+				D22E849C20125F6E0003F563 /* Model */,
+				D22E849220124DBD0003F563 /* Services */,
+				D22E849420124E0C0003F563 /* View Controllers */,
+				D22E849320124E010003F563 /* Views */,
+				D22E848F20124D870003F563 /* Supporting Files */,
+				D22E8485201244DA0003F563 /* Info.plist */,
+			);
+			path = FindASpot;
+			sourceTree = "<group>";
+		};
+		D22E848F20124D870003F563 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D22E8479201244DA0003F563 /* AppDelegate.swift */,
+				D22E847B201244DA0003F563 /* ViewController.swift */,
+				D22E847D201244DA0003F563 /* Main.storyboard */,
+				D22E8480201244DA0003F563 /* Assets.xcassets */,
+				D22E8482201244DA0003F563 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D22E849220124DBD0003F563 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D22E849020124D9D0003F563 /* LocationService.swift */,
+				D22E849D2012603B0003F563 /* UserPreferences.swift */,
+				D22E849F2012659B0003F563 /* YelpAPI.swift */,
+				D22E84A1201265AF0003F563 /* YelpAPIKeys.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D22E849320124E010003F563 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D22E848B201244F30003F563 /* PlaceView.swift */,
+				D22E8495201256B90003F563 /* C4Q.gpx */,
+				D22E849820125D140003F563 /* C4QToCali.gpx */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D22E849420124E0C0003F563 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D22E848D2012485D0003F563 /* PlaceViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D22E849C20125F6E0003F563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D22E849A20125F600003F563 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D22E8475201244DA0003F563 /* FindASpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D22E8488201244DA0003F563 /* Build configuration list for PBXNativeTarget "FindASpot" */;
+			buildPhases = (
+				D22E8472201244DA0003F563 /* Sources */,
+				D22E8473201244DA0003F563 /* Frameworks */,
+				D22E8474201244DA0003F563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindASpot;
+			productName = FindASpot;
+			productReference = D22E8476201244DA0003F563 /* FindASpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D22E846E201244DA0003F563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Lisa J";
+				TargetAttributes = {
+					D22E8475201244DA0003F563 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D22E8471201244DA0003F563 /* Build configuration list for PBXProject "FindASpot" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D22E846D201244DA0003F563;
+			productRefGroup = D22E8477201244DA0003F563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D22E8475201244DA0003F563 /* FindASpot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D22E8474201244DA0003F563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22E8484201244DA0003F563 /* LaunchScreen.storyboard in Resources */,
+				D22E8481201244DA0003F563 /* Assets.xcassets in Resources */,
+				D22E849920125D140003F563 /* C4QToCali.gpx in Resources */,
+				D22E847F201244DA0003F563 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D22E8472201244DA0003F563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22E848E2012485D0003F563 /* PlaceViewController.swift in Sources */,
+				D22E849E2012603B0003F563 /* UserPreferences.swift in Sources */,
+				D22E848C201244F30003F563 /* PlaceView.swift in Sources */,
+				D22E849120124D9D0003F563 /* LocationService.swift in Sources */,
+				D22E84A02012659B0003F563 /* YelpAPI.swift in Sources */,
+				D22E849B20125F600003F563 /* Place.swift in Sources */,
+				D22E847C201244DA0003F563 /* ViewController.swift in Sources */,
+				D22E847A201244DA0003F563 /* AppDelegate.swift in Sources */,
+				D22E84A2201265AF0003F563 /* YelpAPIKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D22E847D201244DA0003F563 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D22E847E201244DA0003F563 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D22E8482201244DA0003F563 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D22E8483201244DA0003F563 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D22E8486201244DA0003F563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D22E8487201244DA0003F563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D22E8489201244DA0003F563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4UC96YYKT;
+				INFOPLIST_FILE = FindASpot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.FindASpot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D22E848A201244DA0003F563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4UC96YYKT;
+				INFOPLIST_FILE = FindASpot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.FindASpot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D22E8471201244DA0003F563 /* Build configuration list for PBXProject "FindASpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22E8486201244DA0003F563 /* Debug */,
+				D22E8487201244DA0003F563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D22E8488201244DA0003F563 /* Build configuration list for PBXNativeTarget "FindASpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D22E8489201244DA0003F563 /* Debug */,
+				D22E848A201244DA0003F563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D22E846E201244DA0003F563 /* Project object */;
+}

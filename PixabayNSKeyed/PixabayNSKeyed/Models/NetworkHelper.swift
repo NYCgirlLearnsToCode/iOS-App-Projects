@@ -14,7 +14,8 @@ enum AppError: Error {
     case codingError(rawError: Error)
     case badStatusCode(num: Int)
     case other(rawError: Error)
-    
+    case notAnImage
+    case noImageAvailable
 }
 
 struct NetworkHelper {

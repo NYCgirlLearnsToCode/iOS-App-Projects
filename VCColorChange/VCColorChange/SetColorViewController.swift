@@ -7,29 +7,41 @@
 //
 
 import UIKit
+//declare protocol where u are originating the data u want to send?
+protocol setColorVCDelegate: class {
+    func changeBackgroundColor(color: UIColor)
+    //protocol methods can't have bodies
+
+}
+
 
 class SetColorViewController: UIViewController {
-
+    @IBOutlet weak var purpleButton: UIButton!
+    
+    @IBOutlet weak var blueButton: UIButton!
+    //weak bc it is to avoid retaining memory cycles, it is a way to trash it when it is not needed from memory, they are strong by default
+    weak var delegate: setColorVCDelegate?// weak can only be applied to class & classbound protocol types
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        purpleButton.layer.borderColor = UIColor.white.cgColor
+        purpleButton.layer.borderWidth = 2.0
+        purpleButton.layer.cornerRadius = purpleButton.frame.width/2
+        //rounded corners
+        blueButton.layer.borderColor = UIColor.white.cgColor
+        blueButton.layer.borderWidth = 2.0
+        blueButton.layer.cornerRadius = blueButton.frame.width/2
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        view.backgroundColor = sender.backgroundColor
+        delegate?.changeBackgroundColor(color: sender.backgroundColor!)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func dismissButtonPressed(_ sender: UIBarButtonItem) {
+        navigationController?.dismiss(animated: true, completion: nil)
     }
-    */
+    
+    
 
 }

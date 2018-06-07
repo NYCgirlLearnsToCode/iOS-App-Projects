@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D2541FCA1FE3081000BEAA3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2541FC91FE3081000BEAA3B /* AppDelegate.swift */; };
-		D2541FCC1FE3081000BEAA3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2541FCB1FE3081000BEAA3B /* ViewController.swift */; };
 		D2541FCF1FE3081000BEAA3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2541FCD1FE3081000BEAA3B /* Main.storyboard */; };
 		D2541FD11FE3081000BEAA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2541FD01FE3081000BEAA3B /* Assets.xcassets */; };
 		D2541FD41FE3081000BEAA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2541FD21FE3081000BEAA3B /* LaunchScreen.storyboard */; };
+		D2541FDE1FE3111C00BEAA3B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2541FDD1FE3111C00BEAA3B /* NetworkHelper.swift */; };
+		D2541FE31FE3138A00BEAA3B /* CriticWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2541FE21FE3138A00BEAA3B /* CriticWrapper.swift */; };
+		D2ABF0301FE31E41003E81B8 /* CriticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF02F1FE31E41003E81B8 /* CriticsViewController.swift */; };
+		D2ABF0321FE31F8F003E81B8 /* ReviewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF0311FE31F8F003E81B8 /* ReviewCellViewController.swift */; };
+		D2ABF0351FE3254F003E81B8 /* ImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF0341FE3254F003E81B8 /* ImageAPIClient.swift */; };
+		D2ABF07B1FE46E44003E81B8 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF07A1FE46E44003E81B8 /* Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D2541FC61FE3081000BEAA3B /* NYTMovieReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTMovieReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2541FC91FE3081000BEAA3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2541FCB1FE3081000BEAA3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2541FCE1FE3081000BEAA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2541FD01FE3081000BEAA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2541FD31FE3081000BEAA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2541FD51FE3081000BEAA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2541FDD1FE3111C00BEAA3B /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		D2541FE21FE3138A00BEAA3B /* CriticWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticWrapper.swift; sourceTree = "<group>"; };
+		D2ABF02F1FE31E41003E81B8 /* CriticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticsViewController.swift; sourceTree = "<group>"; };
+		D2ABF0311FE31F8F003E81B8 /* ReviewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellViewController.swift; sourceTree = "<group>"; };
+		D2ABF0341FE3254F003E81B8 /* ImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIClient.swift; sourceTree = "<group>"; };
+		D2ABF07A1FE46E44003E81B8 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,8 @@
 		D2541FBD1FE3081000BEAA3B = {
 			isa = PBXGroup;
 			children = (
+				D2541FDF1FE3112A00BEAA3B /* Models */,
+				D2ABF0331FE322FD003E81B8 /* ViewControllers */,
 				D2541FC81FE3081000BEAA3B /* NYTMovieReviews */,
 				D2541FC71FE3081000BEAA3B /* Products */,
 			);
@@ -55,13 +67,32 @@
 			isa = PBXGroup;
 			children = (
 				D2541FC91FE3081000BEAA3B /* AppDelegate.swift */,
-				D2541FCB1FE3081000BEAA3B /* ViewController.swift */,
 				D2541FCD1FE3081000BEAA3B /* Main.storyboard */,
 				D2541FD01FE3081000BEAA3B /* Assets.xcassets */,
 				D2541FD21FE3081000BEAA3B /* LaunchScreen.storyboard */,
 				D2541FD51FE3081000BEAA3B /* Info.plist */,
 			);
 			path = NYTMovieReviews;
+			sourceTree = "<group>";
+		};
+		D2541FDF1FE3112A00BEAA3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2541FE21FE3138A00BEAA3B /* CriticWrapper.swift */,
+				D2541FDD1FE3111C00BEAA3B /* NetworkHelper.swift */,
+				D2ABF0341FE3254F003E81B8 /* ImageAPIClient.swift */,
+				D2ABF07A1FE46E44003E81B8 /* Review.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2ABF0331FE322FD003E81B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2ABF02F1FE31E41003E81B8 /* CriticsViewController.swift */,
+				D2ABF0311FE31F8F003E81B8 /* ReviewCellViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2541FCC1FE3081000BEAA3B /* ViewController.swift in Sources */,
+				D2ABF0321FE31F8F003E81B8 /* ReviewCellViewController.swift in Sources */,
+				D2541FDE1FE3111C00BEAA3B /* NetworkHelper.swift in Sources */,
+				D2ABF07B1FE46E44003E81B8 /* Review.swift in Sources */,
+				D2541FE31FE3138A00BEAA3B /* CriticWrapper.swift in Sources */,
+				D2ABF0351FE3254F003E81B8 /* ImageAPIClient.swift in Sources */,
+				D2ABF0301FE31E41003E81B8 /* CriticsViewController.swift in Sources */,
 				D2541FCA1FE3081000BEAA3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

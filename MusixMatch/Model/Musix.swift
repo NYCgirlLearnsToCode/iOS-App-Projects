@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct MusixInfo: Codable {
+    let body: TrackWrapper
+}
+
+struct TrackWrapper: Codable {
+    let
+}

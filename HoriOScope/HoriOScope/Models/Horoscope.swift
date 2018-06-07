@@ -9,8 +9,19 @@
 import Foundation
 
 struct Horoscope: Codable {
-    let mood: String
-    let color: String
+//    let mood: String
+//    let date_range: String
+//    let color: String
+//    let lucky_time: String
     let description: String
-    let compatibility: String
+//    let compatibility: String
+//    let current_date: String
+//    let lucky_number: String
 }
+
+enum HTTPVerb: String {
+    case GET
+    case POST
+}
+
+

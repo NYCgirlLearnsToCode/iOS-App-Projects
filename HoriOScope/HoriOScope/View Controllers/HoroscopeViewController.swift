@@ -17,24 +17,37 @@ class HoroscopeViewController: UIViewController {
         }
     }
 
-    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadHoroscopeData()
+//check that there is a name and sign
+        //        if self.defaults.value
+        let name = UserDefaultsHelper.manager.getName() ?? "No name yet"
+        
+        let sign = UserDefaultsHelper.manager.getSign() ?? "No sign yet"
+        
+        nameLabel.text = "Welcome: \(name)"
+        
+        textView.text = "The forecast for \(sign)"
+        loadData()
     }
-
-    func loadHoroscopeData() {
-        let selectedSign = "aries"
-        let selectedDay = "today"
-        let urlStr = "https://aztro.herokuapp.com/?sign=\(selectedSign)&day=\(selectedDay)"
-        let setHoroscopeToOnline : (Horoscope) -> Void = { (onlineHoroscopes: Horoscope) in
-            self.horoscopes = [onlineHoroscopes]
-        }
-        HoroscopeAPIClient.manager.getHoroscopes(from: urlStr, completionHandler: setHoroscopeToOnline, errorHandler: {print($0)})
+    
+    func loadData() {
+        let sign = ""
+        let date =
+        let urlStr = "https://aztro.herokuapp.com/?sign=aries&day=today"
     }
+    //so when you click back it will save instead of exiting app to update
+    override func viewWillAppear(_ animated: Bool) {
+        //if fields are blank
+        //else loaddata()
+        
+    }
+   
 
 
 }

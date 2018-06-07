@@ -9,11 +9,11 @@
 import Foundation
 
 struct CriticWrapper: Codable {
-    let results: [CriticName]
+    let results: [CriticInfo]
 }
-struct CriticName: Codable {
+struct CriticInfo: Codable {
     let display_name: String
-    let multimedia : ImageWrapper
+    let multimedia : ImageWrapper?
 }
 
 struct ImageWrapper: Codable {

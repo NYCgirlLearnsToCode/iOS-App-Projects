@@ -1,0 +1,6 @@
+framework module Pods_TaskListPractice {
+  umbrella header "Pods-TaskListPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}

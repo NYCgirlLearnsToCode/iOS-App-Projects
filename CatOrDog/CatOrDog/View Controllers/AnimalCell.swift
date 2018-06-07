@@ -9,5 +9,9 @@
 import UIKit
 
 class AnimalCell: UICollectionViewCell {
+   
+    @IBOutlet weak var imageView: UIImageView!
     
+    // for use when caching to keep track of setting a cell's image
+    var urlString: String = ""
 }

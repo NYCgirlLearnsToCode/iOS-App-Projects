@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BoR-9o-0wJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Random Image-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RandomImageViewController" customModule="XibNibExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wq8-Mq-aQB" customClass="PixabayView" customModule="XibNibExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="76" width="375" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27563517999999998" green="1" blue="0.9304192255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BlG-OG-n6C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-46-Jie">
+                                <rect key="frame" x="117" y="574" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save to Favorites "/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BlG-OG-n6C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JSZ-fF-pCZ"/>
+                            <constraint firstItem="BlG-OG-n6C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N1Z-SV-cum"/>
+                            <constraint firstItem="BlG-OG-n6C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aQ3-Xu-Hj4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Random Image" id="EVz-fW-H8z"/>
+                    <connections>
+                        <outlet property="pixabayView" destination="wq8-Mq-aQB" id="aot-ph-kji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="-120.08995502248877"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ps6-Ly-W7a">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BoR-9o-0wJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SgE-KP-oCX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="DbW-iJ-zw8"/>
+                        <segue destination="RGW-vN-fva" kind="relationship" relationship="viewControllers" id="Knt-2Z-N9Q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhR-Wv-MuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182.40000000000001" y="117.84107946026987"/>
+        </scene>
+        <!--Favorited Image-->
+        <scene sceneID="Dab-Dg-Wyz">
+            <objects>
+                <viewController id="RGW-vN-fva" customClass="FavoriteImageViewController" customModule="XibNibExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JIf-ht-YZI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnH-ow-5A5" customClass="PixabayView" customModule="XibNibExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="533.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dph-sH-S7j">
+                                <rect key="frame" x="0.0" y="568" width="375" height="30"/>
+                                <state key="normal" title="Next Image"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hnH-ow-5A5" firstAttribute="height" secondItem="JIf-ht-YZI" secondAttribute="height" multiplier="0.8" id="Ai5-Ke-b1y"/>
+                            <constraint firstItem="mlt-Yd-sqn" firstAttribute="trailing" secondItem="dph-sH-S7j" secondAttribute="trailing" id="WG4-uX-uD1"/>
+                            <constraint firstItem="mlt-Yd-sqn" firstAttribute="bottom" secondItem="dph-sH-S7j" secondAttribute="bottom" constant="20" id="kZH-UP-xCh"/>
+                            <constraint firstItem="hnH-ow-5A5" firstAttribute="width" secondItem="JIf-ht-YZI" secondAttribute="width" id="pn9-ol-3Ac"/>
+                            <constraint firstItem="dph-sH-S7j" firstAttribute="leading" secondItem="mlt-Yd-sqn" secondAttribute="leading" id="szC-WZ-m39"/>
+                            <constraint firstItem="hnH-ow-5A5" firstAttribute="top" secondItem="mlt-Yd-sqn" secondAttribute="top" id="tRf-b1-QJj"/>
+                            <constraint firstItem="hnH-ow-5A5" firstAttribute="leading" secondItem="mlt-Yd-sqn" secondAttribute="leading" id="zk5-lN-PKt"/>
+                            <constraint firstItem="mlt-Yd-sqn" firstAttribute="trailing" secondItem="hnH-ow-5A5" secondAttribute="trailing" id="znI-yz-ty1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mlt-Yd-sqn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorited Image" id="pqv-ve-Zx5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drw-Fv-iNA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="549.17541229385313"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum HTTPVerb: String {
     case GET
@@ -22,7 +23,7 @@ struct PhotoAPIClient {
         guard let url = URL(string: urlStr) else {errorHandler(AppError.badURL); return}
         let completion = {(data: Data) in //parseDataIntoElementArr
             do {
-                let onlinePhotos = try JSONDecoder().decode(PhotoInfo.self, from: data)
+                let onlinePhotos = try JSONDecoder().decode(PhotoInfo.self, from: data)//is this where it is unwrapped bc its a dictionary in an array?
                 let hitsInfo = onlinePhotos.hits
                 completionHandler(hitsInfo)
             } catch let error{
@@ -32,5 +33,27 @@ struct PhotoAPIClient {
             }
         }
         NetworkHelper.manager.performDataTask(with: url, completionHandler: completion, errorHandler: errorHandler)
+    }
+}
+class ImageAPIClient {
+    private init() {}
+    static let manager = ImageAPIClient()
+    func getImage(from urlStr: String,
+                  completionHander: @escaping (UIImage) -> Void,
+                  errorHander: @escaping (AppError) -> Void) {
+        guard let url = URL(string: urlStr) else {
+            errorHander(.badURL)
+            return
+        }
+        let completion: (Data) -> Void = {(data: Data) in
+            guard let onlineImage = UIImage(data: data) else {
+                errorHander(.notAnImage)
+                return
+            }
+            completionHander(onlineImage)
+        }
+        NetworkHelper.manager.performDataTask(with: url,
+                                              completionHandler: completion,
+                                              errorHandler: {print($0)})
     }
 }

@@ -17,21 +17,21 @@ class DataModel {
     static let shared = DataModel()
     
     //Variables
-    private var lists = [Photos]() {
+    private var lists = [Favorites]() {//array to be saved
         didSet {
-            savePhotoFavoriteList()
+            saveFavoritesList()
             print(documentDirectory())//prints directory path of saved user defaults
         }
         
     }
-   private func documentDirectory() -> URL {
+    private func documentDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0] //the 0 is document folder
     }
     
     //returns document's directory path for app sandbox
     private func dataFilePath(withPathName path: String) -> URL {
-       return DataModel.shared.documentDirectory().appendingPathComponent(path)
+        return DataModel.shared.documentDirectory().appendingPathComponent(path)
     }
     
     //save
@@ -56,7 +56,25 @@ class DataModel {
             print("error decoding items: \(error.localizedDescription)")
         }
     }
+    //create
+    public func addFavoriteItemToList(newItem item: Favorites) {
+        lists.append(item)
+    }
+    
+    //read
+    public func getLists() -> [Favorites] {//returns favorites array
+        return lists
+    }
+    //update
+    public func updateFavoriteItem(withUpdatedItem item: Favorites){
+        if let index = lists.index(where: {$0 === item}) {
+            lists[index] = item
+        }
+    }
+    
+    
 }
+
 
 
 

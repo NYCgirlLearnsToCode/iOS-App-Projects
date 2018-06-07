@@ -7,19 +7,27 @@
 //
 
 import UIKit
-
-class MainViewController: UIViewController {
-
+//conforming to setColorVCDelegate
+class MainViewController: UIViewController, setColorVCDelegate {
+    func changeBackgroundColor(color: UIColor) {
+        print("received message from delegate")
+        view.backgroundColor? = color
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nav = segue.destination as? UINavigationController {//bc modally and it hasits own nav controller
+            let secondVC = nav.childViewControllers.first as! SetColorViewController
+            secondVC.delegate = self
+        }
     }
-
 
 }
 

@@ -9,5 +9,6 @@
 import UIKit
 
 class MovieCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
     
 }

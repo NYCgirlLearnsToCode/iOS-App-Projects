@@ -28,6 +28,10 @@ class EditListViewController: UIViewController {
             let dsaDescription = DSATextView.text else {return}
         if dsaTitle.isEmpty || dsaDescription.isEmpty {
             showAlert()
+            return
+        }else {//save
+            let dsaItem = DSA.init(title: dsaTitle, description: dsaDescription)
+            DataModel.shared.addDSAItemToList(dsaItem:dsaItem)
         }
         navigationController?.dismiss(animated: true, completion: nil)
         

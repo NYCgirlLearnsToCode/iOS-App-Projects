@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct Movie: Codable {
+    let artworkUrl100: URL
+    let artworkUrl160: URL
+    let collectionName: String?
+    let collectionId: Int?
+    let trackId:Int
+    let longDescription: String?
+}
+
+struct MovieResults: Codable {
+    let results: [Movie]
+}

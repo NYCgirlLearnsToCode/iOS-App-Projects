@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2EF38CB20B5E5910001DC32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38CA20B5E5910001DC32 /* AppDelegate.m */; };
+		D2EF38CE20B5E5910001DC32 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38CD20B5E5910001DC32 /* EventsViewController.m */; };
+		D2EF38D120B5E5910001DC32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EF38CF20B5E5910001DC32 /* Main.storyboard */; };
+		D2EF38D320B5E5960001DC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EF38D220B5E5960001DC32 /* Assets.xcassets */; };
+		D2EF38D620B5E5960001DC32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EF38D420B5E5960001DC32 /* LaunchScreen.storyboard */; };
+		D2EF38D920B5E5960001DC32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38D820B5E5960001DC32 /* main.m */; };
+		D2EF38E320B5E5960001DC32 /* EventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38E220B5E5960001DC32 /* EventsTests.m */; };
+		D2EF38EF20B5E5CA0001DC32 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38EE20B5E5CA0001DC32 /* Event.m */; };
+		D2EF38F620B5E87D0001DC32 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = D2EF38F520B5E87D0001DC32 /* events.json */; };
+		D2EF38F820B5E9750001DC32 /* MeetupAPITest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38F720B5E9750001DC32 /* MeetupAPITest.m */; };
+		D2EF38FC20B5E9B70001DC32 /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38FB20B5E9B70001DC32 /* NetworkHelper.m */; };
+		D2EF38FF20B5F1F50001DC32 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF38FE20B5F1F50001DC32 /* EventCell.m */; };
+		D2EF390220B5F2310001DC32 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF390120B5F2310001DC32 /* ImageCache.m */; };
+		D2EF390420B5F4180001DC32 /* MeetupAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EF390320B5F4180001DC32 /* MeetupAPIService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2EF38DF20B5E5960001DC32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2EF38BE20B5E5910001DC32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2EF38C520B5E5910001DC32;
+			remoteInfo = Events;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2EF38C620B5E5910001DC32 /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EF38C920B5E5910001DC32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2EF38CA20B5E5910001DC32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2EF38CC20B5E5910001DC32 /* EventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		D2EF38CD20B5E5910001DC32 /* EventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		D2EF38D020B5E5910001DC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2EF38D220B5E5960001DC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2EF38D520B5E5960001DC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2EF38D720B5E5960001DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2EF38D820B5E5960001DC32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2EF38DE20B5E5960001DC32 /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EF38E220B5E5960001DC32 /* EventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsTests.m; sourceTree = "<group>"; };
+		D2EF38E420B5E5960001DC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2EF38ED20B5E5B70001DC32 /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		D2EF38EE20B5E5CA0001DC32 /* Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		D2EF38F020B5E6080001DC32 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D2EF38F520B5E87D0001DC32 /* events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		D2EF38F720B5E9750001DC32 /* MeetupAPITest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetupAPITest.m; sourceTree = "<group>"; };
+		D2EF38FA20B5E9A70001DC32 /* NetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
+		D2EF38FB20B5E9B70001DC32 /* NetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
+		D2EF38FD20B5F1E90001DC32 /* EventCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		D2EF38FE20B5F1F50001DC32 /* EventCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
+		D2EF390020B5F2270001DC32 /* ImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		D2EF390120B5F2310001DC32 /* ImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		D2EF390320B5F4180001DC32 /* MeetupAPIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetupAPIService.m; sourceTree = "<group>"; };
+		D2EF390520B5F4250001DC32 /* MeetupAPIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeetupAPIService.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2EF38C320B5E5910001DC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EF38DB20B5E5960001DC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2EF38BD20B5E5910001DC32 = {
+			isa = PBXGroup;
+			children = (
+				D2EF38F920B5E9920001DC32 /* Services */,
+				D2EF38C820B5E5910001DC32 /* Events */,
+				D2EF38E120B5E5960001DC32 /* EventsTests */,
+				D2EF38C720B5E5910001DC32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2EF38C720B5E5910001DC32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF38C620B5E5910001DC32 /* Events.app */,
+				D2EF38DE20B5E5960001DC32 /* EventsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2EF38C820B5E5910001DC32 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF38C920B5E5910001DC32 /* AppDelegate.h */,
+				D2EF38CA20B5E5910001DC32 /* AppDelegate.m */,
+				D2EF38CC20B5E5910001DC32 /* EventsViewController.h */,
+				D2EF38FD20B5F1E90001DC32 /* EventCell.h */,
+				D2EF38FE20B5F1F50001DC32 /* EventCell.m */,
+				D2EF390020B5F2270001DC32 /* ImageCache.h */,
+				D2EF390120B5F2310001DC32 /* ImageCache.m */,
+				D2EF38CD20B5E5910001DC32 /* EventsViewController.m */,
+				D2EF38F220B5E6500001DC32 /* Models */,
+				D2EF38F120B5E63D0001DC32 /* Utilities */,
+				D2EF38CF20B5E5910001DC32 /* Main.storyboard */,
+				D2EF38D220B5E5960001DC32 /* Assets.xcassets */,
+				D2EF38D420B5E5960001DC32 /* LaunchScreen.storyboard */,
+				D2EF38D720B5E5960001DC32 /* Info.plist */,
+				D2EF38D820B5E5960001DC32 /* main.m */,
+				D2EF38F520B5E87D0001DC32 /* events.json */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		D2EF38E120B5E5960001DC32 /* EventsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF38E220B5E5960001DC32 /* EventsTests.m */,
+				D2EF38E420B5E5960001DC32 /* Info.plist */,
+				D2EF38F720B5E9750001DC32 /* MeetupAPITest.m */,
+			);
+			path = EventsTests;
+			sourceTree = "<group>";
+		};
+		D2EF38F120B5E63D0001DC32 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF38F020B5E6080001DC32 /* Constants.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D2EF38F220B5E6500001DC32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF38ED20B5E5B70001DC32 /* Event.h */,
+				D2EF38EE20B5E5CA0001DC32 /* Event.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2EF38F920B5E9920001DC32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF38FA20B5E9A70001DC32 /* NetworkHelper.h */,
+				D2EF38FB20B5E9B70001DC32 /* NetworkHelper.m */,
+				D2EF390520B5F4250001DC32 /* MeetupAPIService.h */,
+				D2EF390320B5F4180001DC32 /* MeetupAPIService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2EF38C520B5E5910001DC32 /* Events */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2EF38E720B5E5960001DC32 /* Build configuration list for PBXNativeTarget "Events" */;
+			buildPhases = (
+				D2EF38C220B5E5910001DC32 /* Sources */,
+				D2EF38C320B5E5910001DC32 /* Frameworks */,
+				D2EF38C420B5E5910001DC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Events;
+			productName = Events;
+			productReference = D2EF38C620B5E5910001DC32 /* Events.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2EF38DD20B5E5960001DC32 /* EventsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2EF38EA20B5E5960001DC32 /* Build configuration list for PBXNativeTarget "EventsTests" */;
+			buildPhases = (
+				D2EF38DA20B5E5960001DC32 /* Sources */,
+				D2EF38DB20B5E5960001DC32 /* Frameworks */,
+				D2EF38DC20B5E5960001DC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2EF38E020B5E5960001DC32 /* PBXTargetDependency */,
+			);
+			name = EventsTests;
+			productName = EventsTests;
+			productReference = D2EF38DE20B5E5960001DC32 /* EventsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2EF38BE20B5E5910001DC32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Lisa J";
+				TargetAttributes = {
+					D2EF38C520B5E5910001DC32 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					D2EF38DD20B5E5960001DC32 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D2EF38C520B5E5910001DC32;
+					};
+				};
+			};
+			buildConfigurationList = D2EF38C120B5E5910001DC32 /* Build configuration list for PBXProject "Events" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2EF38BD20B5E5910001DC32;
+			productRefGroup = D2EF38C720B5E5910001DC32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2EF38C520B5E5910001DC32 /* Events */,
+				D2EF38DD20B5E5960001DC32 /* EventsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2EF38C420B5E5910001DC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EF38F620B5E87D0001DC32 /* events.json in Resources */,
+				D2EF38D620B5E5960001DC32 /* LaunchScreen.storyboard in Resources */,
+				D2EF38D320B5E5960001DC32 /* Assets.xcassets in Resources */,
+				D2EF38D120B5E5910001DC32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EF38DC20B5E5960001DC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2EF38C220B5E5910001DC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EF390420B5F4180001DC32 /* MeetupAPIService.m in Sources */,
+				D2EF38EF20B5E5CA0001DC32 /* Event.m in Sources */,
+				D2EF38CE20B5E5910001DC32 /* EventsViewController.m in Sources */,
+				D2EF38D920B5E5960001DC32 /* main.m in Sources */,
+				D2EF38CB20B5E5910001DC32 /* AppDelegate.m in Sources */,
+				D2EF38FF20B5F1F50001DC32 /* EventCell.m in Sources */,
+				D2EF38FC20B5E9B70001DC32 /* NetworkHelper.m in Sources */,
+				D2EF390220B5F2310001DC32 /* ImageCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EF38DA20B5E5960001DC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EF38F820B5E9750001DC32 /* MeetupAPITest.m in Sources */,
+				D2EF38E320B5E5960001DC32 /* EventsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2EF38E020B5E5960001DC32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2EF38C520B5E5910001DC32 /* Events */;
+			targetProxy = D2EF38DF20B5E5960001DC32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2EF38CF20B5E5910001DC32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2EF38D020B5E5910001DC32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2EF38D420B5E5960001DC32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2EF38D520B5E5960001DC32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2EF38E520B5E5960001DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2EF38E620B5E5960001DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2EF38E820B5E5960001DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Events/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.Events";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2EF38E920B5E5960001DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Events/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.Events";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2EF38EB20B5E5960001DC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EventsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.EventsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Events.app/Events";
+			};
+			name = Debug;
+		};
+		D2EF38EC20B5E5960001DC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EventsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lisa-j.EventsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Events.app/Events";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2EF38C120B5E5910001DC32 /* Build configuration list for PBXProject "Events" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EF38E520B5E5960001DC32 /* Debug */,
+				D2EF38E620B5E5960001DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2EF38E720B5E5960001DC32 /* Build configuration list for PBXNativeTarget "Events" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EF38E820B5E5960001DC32 /* Debug */,
+				D2EF38E920B5E5960001DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2EF38EA20B5E5960001DC32 /* Build configuration list for PBXNativeTarget "EventsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EF38EB20B5E5960001DC32 /* Debug */,
+				D2EF38EC20B5E5960001DC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2EF38BE20B5E5910001DC32 /* Project object */;
+}

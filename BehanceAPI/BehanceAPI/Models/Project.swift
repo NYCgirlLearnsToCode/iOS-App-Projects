@@ -7,3 +7,26 @@
 //
 
 import Foundation
+struct Project: Codable {
+    let title: String
+    static let testProjects = [
+    Project(title: "testing")
+    ]
+}
+//struct Project: Codable {
+//    let projects: [ProjectInfo]
+//}
+//
+//struct ProjectInfo: Codable {
+//    let name: String
+//    let covers: CoverWrapper
+//}
+//
+//struct CoverWrapper: Codable {
+//    let image: String
+//
+//    enum CodingKeys: String, CodingKey {
+//        case image = "202"
+//    }
+//}
+

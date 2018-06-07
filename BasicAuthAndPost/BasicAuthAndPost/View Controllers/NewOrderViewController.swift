@@ -9,27 +9,31 @@
 import UIKit
 
 class NewOrderViewController: UIViewController {
-
+    @IBOutlet weak var orderNameTF: UITextField!
+    @IBOutlet weak var orderCostTF: UITextField!
+    
+    @IBAction func postButtonPressed(_ sender: Any) {
+        guard let orderName = self.orderNameTF.text else {
+            return
+        }
+        guard let orderCostStr = self.orderCostTF.text else {
+            return
+        }
+        guard let orderCost = Int(orderCostStr) else {return}
+        print(orderName, orderCost)
+        self.orderNameTF.text = ""//clears itself out
+        self.orderCostTF.text = ""
+    //Mkae POST request with orderName and orderCost
+        let newOrder = Order(name: orderName, totalCost: orderCost)
+        OrderAPIClient.manager.post(order: newOrder){print($0)}
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Layer Property View Controller-->
+        <scene sceneID="gVk-ju-wt4">
+            <objects>
+                <viewController storyboardIdentifier="LayerPropertyViewController" id="PVD-5J-ypX" customClass="LayerPropertyViewController" customModule="CoreAnimationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lnR-Ex-nAF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten" translatesAutoresizingMaskIntoConstraints="NO" id="IQy-qi-xPn">
+                                <rect key="frame" x="56" y="60" width="262.5" height="259"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARR-E5-XyM">
+                                <rect key="frame" x="20" y="617" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset" destination="PVD-5J-ypX" eventType="touchUpInside" id="pTN-5D-CcU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUa-rT-Rlk">
+                                <rect key="frame" x="298" y="617" width="57" height="30"/>
+                                <state key="normal" title="Animate"/>
+                                <connections>
+                                    <action selector="animateWithButton:" destination="PVD-5J-ypX" eventType="touchUpInside" id="z8D-dg-jhF"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tOW-CJ-Jrr">
+                                <rect key="frame" x="0.0" y="339" width="375" height="270"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertyCell" id="40e-Lh-zpO">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="40e-Lh-zpO" id="CLO-b1-nP7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tOW-CJ-Jrr" firstAttribute="leading" secondItem="8DV-2c-7hZ" secondAttribute="leading" id="Ci6-kP-yuR"/>
+                            <constraint firstItem="tOW-CJ-Jrr" firstAttribute="trailing" secondItem="8DV-2c-7hZ" secondAttribute="trailing" id="Drd-bF-vtp"/>
+                            <constraint firstItem="8DV-2c-7hZ" firstAttribute="trailing" secondItem="rUa-rT-Rlk" secondAttribute="trailing" constant="20" id="K5b-P2-RDM"/>
+                            <constraint firstItem="tOW-CJ-Jrr" firstAttribute="top" secondItem="IQy-qi-xPn" secondAttribute="bottom" constant="20" id="Kin-Ty-Cte"/>
+                            <constraint firstItem="8DV-2c-7hZ" firstAttribute="bottom" secondItem="rUa-rT-Rlk" secondAttribute="bottom" constant="20" id="Lod-t4-rX2"/>
+                            <constraint firstItem="IQy-qi-xPn" firstAttribute="top" secondItem="8DV-2c-7hZ" secondAttribute="top" constant="40" id="SPu-nc-WTg"/>
+                            <constraint firstItem="IQy-qi-xPn" firstAttribute="centerX" secondItem="8DV-2c-7hZ" secondAttribute="centerX" id="ajv-aF-ev5"/>
+                            <constraint firstItem="ARR-E5-XyM" firstAttribute="top" secondItem="tOW-CJ-Jrr" secondAttribute="bottom" constant="8" id="f9X-Ru-P24"/>
+                            <constraint firstItem="ARR-E5-XyM" firstAttribute="leading" secondItem="8DV-2c-7hZ" secondAttribute="leading" constant="20" id="q4a-kn-Awr"/>
+                            <constraint firstItem="8DV-2c-7hZ" firstAttribute="bottom" secondItem="ARR-E5-XyM" secondAttribute="bottom" constant="20" id="qY7-HF-wX5"/>
+                            <constraint firstItem="IQy-qi-xPn" firstAttribute="width" secondItem="8DV-2c-7hZ" secondAttribute="width" multiplier="0.7" id="tOJ-LA-4ix"/>
+                            <constraint firstItem="IQy-qi-xPn" firstAttribute="height" secondItem="8DV-2c-7hZ" secondAttribute="height" multiplier="0.4" id="yfe-me-Rhc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8DV-2c-7hZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="IQy-qi-xPn" id="e0G-Jf-w0L"/>
+                        <outlet property="tableView" destination="tOW-CJ-Jrr" id="EbK-2P-5sL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQ2-RU-gAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitten" width="283" height="424"/>
+    </resources>
+</document>

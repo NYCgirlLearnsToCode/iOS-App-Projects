@@ -13,7 +13,7 @@
         <!--Orders-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasicAuthAndPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OrdersViewController" customModule="BasicAuthAndPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,15 +65,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="dHN-3n-cQf" id="BqZ-em-oDF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--New Order View Controller-->
         <scene sceneID="VWQ-r7-4xg">
             <objects>
-                <viewController id="9Nj-Lm-laM" sceneMemberID="viewController">
+                <viewController id="9Nj-Lm-laM" customClass="NewOrderViewController" customModule="BasicAuthAndPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ahY-Ye-6gw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,11 +124,18 @@
                                 <rect key="frame" x="167" y="362" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="POST"/>
+                                <connections>
+                                    <action selector="postButtonPressed:" destination="9Nj-Lm-laM" eventType="touchUpInside" id="YLh-8D-sez"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RFj-V9-R29"/>
                     </view>
+                    <connections>
+                        <outlet property="orderCostTF" destination="c7c-0M-C8D" id="DHQ-Wt-hBG"/>
+                        <outlet property="orderNameTF" destination="I1m-YM-bs9" id="Nyt-hi-n2r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKu-Y8-lup" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

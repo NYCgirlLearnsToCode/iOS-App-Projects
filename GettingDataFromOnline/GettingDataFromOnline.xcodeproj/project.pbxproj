@@ -93,6 +93,7 @@
 				D2BA0FFD1FCC6FCE003C0D14 /* Stock.swift */,
 				D2BA0FFB1FCC6EE4003C0D14 /* StockAPIClient.swift */,
 				D2BA0FF91FCC6EA4003C0D14 /* NetworkHelper.swift */,
+				D2BA10041FCC7E3F003C0D14 /* ArticleAPIClient.swift */,
 				D2BA10021FCC7CCA003C0D14 /* Article.swift */,
 			);
 			path = Models;
@@ -104,7 +105,6 @@
 				D2C1E4611FCC881C00553892 /* ArticleDetailViewController.swift */,
 				D2BA0FE51FCC6A59003C0D14 /* ViewController.swift */,
 				D2BA10001FCC7C5E003C0D14 /* ArticlesViewController.swift */,
-				D2BA10041FCC7E3F003C0D14 /* ArticleAPIClient.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

@@ -7,6 +7,13 @@
 //
 
 import Foundation
+
+enum AppError: Error {
+    case badData
+    case badURL
+    case codingError(rawError: Error)
+}
+
 class NetworkHelper{
     private init(){}
     static let manager = NetworkHelper()
